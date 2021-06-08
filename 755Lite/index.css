@@ -1,0 +1,30 @@
+button{
+          background:rgba(0,0,0,0.3);
+          width:8%;
+          height:125px
+} 
+button:hover {
+          background:rgba(0,0,0,0.95);
+          cursor: pointer;
+          box-shadow: 0px 0px 30px 30px #969696;
+          border-radius: 20px;
+}
+button img{
+          width:100%;
+}
+
+		.bg {
+		  background-image: url("img.jpg");
+		  font-family: system-ui;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+
+
+
+
+
+ 
+   
+    
