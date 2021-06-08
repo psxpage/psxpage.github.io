@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GoldHen Host Menu</title>
+    <link rel="stylesheet" href="img/index.css">
+</head>  
+<style>
+.btn {
+width: 500px;
+height: 50px;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+text-decoration: none;
+font-size: 20px;
+margin-top: 15px;
+margin-bottom: 5px;
+margin-left: 15px;
+margin-right: 5px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+.btn-main {
+background-color: red;
+color: white;
+border-radius: 20px;
+}
+.btn-main:hover {
+background-color: white;
+color: red;
+border-radius: 25px;
+}
+</style> 
+<body style="color:white;font-size:20px;text-align:center;" class="bg">
+<h1 style='font-size:40px;margin:0;text-shadow: 4px 4px 4px #0048ad'>GoldHen Host Menu</h1>
+<h3 style='font-size:26px;margin:0;text-shadow: 4px 4px 4px #0048ad'><i>Only for Jailbreak PlayStation 4</i></h3>
+<hr><br><br><br>
+<h2 id=msgs>Choose your GoldHen Firmware :</h2>
+<button><a onMouseOver="msgs.innerHTML='GoldHen payload for PS4 6.72'" onmouseout="msgs.innerHTML='Choose your GoldHen Firmware :'" href="672/index.html" style="text-decoration:none"><div style="font-size:40px;font-weight:bold;">GoldHen 6.72</a></button>&nbsp;
+<button><a onMouseOver="msgs.innerHTML='GoldHen payload for PS4 7.02'" onmouseout="msgs.innerHTML='Choose your GoldHen Firmware :'" href="702/index.html" style="text-decoration:none"><div style="font-size:40px;font-weight:bold;">GoldHen 7.02</a></button><br><br>
+<button><a onMouseOver="msgs.innerHTML='GoldHen payload for PS4 7.50/7.51/7.55'" onmouseout="msgs.innerHTML='Choose your GoldHen Firmware :'" href="75X/index.html" style="text-decoration:none"><div style="font-size:40px;font-weight:bold;">GoldHen 7.5X</a></button>&nbsp;
+<button><a onMouseOver="msgs.innerHTML='GoldHen payload only for PS4 7.55'" onmouseout="msgs.innerHTML='Choose your GoldHen Firmware :'" href="755Lite/index.html" style="text-decoration:none"><div style="font-size:40px;font-weight:bold;">GoldHen 7.55 Lite</a></button>
+</div>
+<div style="position:fixed;left:0;bottom:-8px;width:100%;font-size:16px;">
+<hr><i>
+*Original host by Leefull/Darkmodder/Prb, Mod by Magnum, GoldHen by Sistr0 & Joonie86 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PS4 Firmware <span id="PS4fw"></span><hr>
+</div>
+<script>
+UA = navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (") + 28, navigator.userAgent.indexOf(") Apple")); PS4fw.innerHTML=""+UA+" Detected";
+</script>
+</body>
+</html>
