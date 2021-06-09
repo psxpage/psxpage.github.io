@@ -8,8 +8,4 @@ This host is only for __HEN & GoldHEN__ payload from SiSTR0 and Joonie86
     * GoldHEN 1.0 by Sistro
     * GoldHEN 1.1 by Sistro
     * HEN 2.3.1b by Sistro
-
-# Link Host :
-https://magnumgame.github.io/
-
-![PHOTO](https://github.com/magnumgame/magnumgame.github.io/blob/main/magnumSS.jpg)
+    
