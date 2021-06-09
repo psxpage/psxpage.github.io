@@ -7,7 +7,7 @@ function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msg
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.msgs.innerHTML="Turn Off the Internet & Reopen to Run the Webkit!!";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
 <body style="color:white;font-size:25px;text-align:center;" onload="go();" class="bg">
-<h1 id=msgs style='font-size:30px;text-align:center;color:white'>Magnum GoldHen 7.55 Lite</h1>
+<h1 id=msgs style='font-size:30px;text-align:center;color:white;text-shadow: 3px 3px 3px #9c0000;'>Magnum GoldHen 7.55 Lite</h1>
 <div id=dlog></div>
 <button style=opacity:0 id="input1" onfocus="handle2()"></button>
 <button style=opacity:0 id="input2"></button>
