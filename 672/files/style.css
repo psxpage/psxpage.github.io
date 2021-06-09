@@ -2,7 +2,7 @@ html{}body{background-color:#0D1117;background-size:cover;background-repeat:no-r
 }
 @font-face {font-family:'Icons';font-style:normal;font-weight:900;src: local('Icons'), url(Icons.ttf) format('truetype');
 }/* rgba(40,40,40,.7) */
-.Icon{background:linear-gradient(to bottom left,rgba(255,255,255,.5),rgba(00,00,00,.7),rgba(00,00,00,.7),rgba(255,255,255,.5));background-size:100% 100%;background-repeat:no-repeat;cursor:none;
+.Icon{background:linear-gradient(to bottom left,rgba(218,165,32,.5),rgba(00,00,00,.7),rgba(00,00,00,.7),rgba(218,165,32,.5));background-size:100% 100%;background-repeat:no-repeat;cursor:none;
 }
 .LoadingTXT {
 position:absolute;
