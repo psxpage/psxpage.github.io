@@ -1,9 +1,9 @@
 <html manifest="offlineCache.manifest">
 	<style>
 		.button {
-		  background-color: #003263;  
+		  background-color: #333333;  
 		  border-radius: 5px;
-		  color: white;
+		  color: #DAA520;
 		  padding: .5em;
 		  text-decoration: none;
 		  height:100%;
@@ -13,7 +13,8 @@
 
 		.button:focus,
 		.button:hover {
-		  background-color: #007bff;
+		  background-color: #000000;
+                  box-shadow: 0px 0px 3px 3px #DAA520;
 		  color: White;
 		}
 
@@ -23,7 +24,7 @@
 		  color: white;
 		  padding: .5em;
 		  text-decoration: none;
-	          text-shadow: 4px 4px 4px #000000;
+	          text-shadow: 4px 4px 4px #9c0000;
 		  text-align: center;
 		  margin-top: -10px;
 		  margin-bottom: -10px;
@@ -38,7 +39,7 @@
 
 		.bg {
 		  /* The image used */
-		  background-image: url("75x.jpg");
+		  background-color: #0D1117;
 		  font-family: system-ui;
 		  /* Center and scale the image nicely */
 		  background-position: center;
@@ -144,7 +145,7 @@
 
 	</style>
 	<head>
-		<title>Magnum GoldHen 7.5X</title>
+		<title>Magnum GoldHen 7.5x</title>
 	</head>
 	<body onload="go()" class="bg">
 		<script>
@@ -298,7 +299,7 @@
 		<script src="./webkit/utils.js"></script>
 		<script src="./webkit/int64.js"></script>
 		<script src="./webkit/ps4.js"></script>
-		<h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><hr><br>
+		<h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><br>
 		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
 		<button style="opacity:0" id="input2"></button>
 		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
