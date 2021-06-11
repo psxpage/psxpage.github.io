@@ -1,13 +1,13 @@
 <html manifest="offlinexmb.cache">
 <head>
-<title>Magnum 7.55 Lite</title>
+<title>GoldHen 7.55 Lite</title>
 <link rel="stylesheet" href="index.css">
 <body style="color:white;font-size:20px;text-align:center;" onload="go();" class="bg">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%"};
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.msgs.innerHTML="Turn Off the Internet & Reopen to Run the Webkit!!";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<h1 id=msgs style='font-size:25px;text-align:center;color:white'>Magnum 7.55 Lite Version</h1>
+<h1 id=msgs style='font-size:25px;text-align:center;color:white'>GoldHen 7.55 Lite Version</h1>
 <div id=dlog></div>
 <button style=opacity:0 id="input1" onfocus="handle2()"></button>
 <button style=opacity:0 id="input2"></button>
