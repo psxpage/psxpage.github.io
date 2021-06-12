@@ -1,13 +1,13 @@
 button{
                   width:14%;
-                  height:210px;
+                  height:185px;
 		  border-radius: 10px;
 	          background-color: #333333;
 } 
 button:hover {
           box-shadow: 0px 0px 10px 10px #DAA520;
           border-radius: 10px;
-	  background-color: #000000;
+	  background-color: #FFFFFF;
 }
 button img{
           width:100%;
