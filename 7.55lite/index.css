@@ -1,0 +1,40 @@
+button{
+          background:rgba(0,0,0,0.3);
+          width:9.5%;
+          height:135px
+} 
+button:hover {
+	 background-color:red;
+          
+          cursor: pointer;
+          box-shadow: 0px 0px 30px 30px #969696;
+          border-radius: 20px;
+}
+button img{
+          width:100%;
+}
+
+		.bg {
+		  background-image: url("img.jpg");
+		  font-family: system-ui;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+.button2 {
+	color: white;
+  background-color: transparent;
+  height:inherit;
+  width: inherit;
+} 
+.button2:hover {
+  background-color:red;
+          cursor: pointer;
+          border-radius: 0px;
+}
+
+
+
+ 
+   
+    
