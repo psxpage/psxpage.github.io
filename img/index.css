@@ -5,7 +5,7 @@ button{
 	          background-color: #333333;
 } 
 button:hover {
-          box-shadow: 0px 0px 10px 10px #FFFFFF;
+          box-shadow: 0px 0px 10px 10px #f49335;
           border-radius: 20px;
 	  background-color: #333333;
 }
@@ -14,7 +14,7 @@ button img{
 } 
 
 		.bg {
-                  background-image: url("index.jpg");
+                  background-image: url("euro.jpg");
 		  background-color: #0D1117;
 		  font-family: system-ui;
 		  background-position: center;
