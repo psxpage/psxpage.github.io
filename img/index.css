@@ -2,12 +2,12 @@ button{
                   width:200px;
                   height:205px;
 		  border-radius: 20px;
-	          background-color: #333333;
+	          background-color: #048fa4;
 } 
 button:hover {
-          box-shadow: 0px 0px 10px 10px #f49335;
+          box-shadow: 0px 0px 10px 10px #ffffff;
           border-radius: 20px;
-	  background-color: #333333;
+	  background-color: #1da8bd;
 }
 button img{
           width:100%;
