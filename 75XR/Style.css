@@ -53,6 +53,7 @@ background-size:cover;
 }
 button {
             background-color: white;
+            box-shadow: 0px 0px 10px 0px white;
             border: 2px solid black;
             border-radius: 10px;
             width: 170px;
@@ -60,7 +61,7 @@ button {
             text-align: center;
 }
 button:hover {
-            box-shadow: 0 5px 50px 0 white;
+            box-shadow: 0px 0px 30px 0px white;
             color: white;
             border-radius: 10px;
 }
