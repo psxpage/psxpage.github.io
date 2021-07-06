@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIGHT KING PS4 OFFLINE TRAINER</title>
+<script>
+function load_payload() {
+  document.write('<script src="loader.js"><\/scr' + 'ipt><script src="trainer672.js"><\/scr' + 'ipt><script src="c-code.js"><\/scr' + 'ipt><script>payload_finished();<\/scr' + 'ipt>');
+}
+
+function payload_finished() {
+  document.write("<h1 style='color:blue;font-size: 45px;'>Night King PS4 Offline Trainer Success!</h1>");
+  //read_ptr_at(0);
+}
+
+function check_jb_finished() {
+  if (main_ret == 179 || main_ret == 0) {
+    document.write("<h1 style='color:blue;font-size: 45px;'>Jailbreak Success! Loading PS4 Offline Trainer, please wait...</h1>");
+    //read_ptr_at(0);
+    setTimeout(function(){ load_payload() }, 1500);
+  } else {
+    document.write("<h1 style='color:red;font-size: 45px;'>Jailbreak failed! <br> Reboot your device and try again.</h1>");
+  }
+}
+</script>
+</head>
+<body>
+<script>
+     var userAgent = navigator.userAgent;     
+     if (userAgent.indexOf("PlayStation 4 6.72") != -1) {
+     document.write('<script src="exploit.js"><\/scr' + 'ipt><script src="jailbreak.js"><\/scr' + 'ipt><script>check_jb_finished();<\/scr' + 'ipt>');
+     }              else {
+      document.write('<script src="exploit.js"><\/scr' + 'ipt><script>load_payload();<\/scr' + 'ipt>');
+     }
+</script>
+</body>
+</html>
