@@ -15,7 +15,8 @@ button img{
 }
 
 		.bg {
-		  background-image: url("755.jpg");
+		  background-image: none;
+                  background-color: #1a1920;
 		  font-family: system-ui;
 		  background-position: center;
 		  background-repeat: no-repeat;
