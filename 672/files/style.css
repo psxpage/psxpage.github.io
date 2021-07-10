@@ -1,4 +1,4 @@
-html{}body{background:url("img/672.jpg");background-size:cover;background-repeat:no-repeat;color:#DDE5EA;font-family:sans-serif;font-size:22px;overflow:hidden;cursor:none;
+html{}body{background-color:#1a1920;background-size:cover;background-repeat:no-repeat;color:white;font-family:sans-serif;font-size:22px;overflow:hidden;cursor:none;
 }
 @font-face {font-family:'Icons';font-style:normal;font-weight:900;src: local('Icons'), url(Icons.ttf) format('truetype');
 }/* rgba(40,40,40,.7) */
@@ -12,7 +12,7 @@ height:60px;
 text-align:center;
 font-weight:bold;
 font-size:28px;
-text-shadow: -2px 2px #274478;
+text-shadow: -2px 2px black;
 line-height:27px;
 letter-spacing:3px;
 padding:3 0 0 0;
@@ -54,19 +54,19 @@ padding:4px 14px 6px 14px;opacity:1;
 }
 #PassFail{
 position:fixed;right:10px;bottom:10px;
-font-size:18px;font-weight:bold;z-index:1;text-shadow:-1px 1px #646468;text-align:right;
+font-size:18px;font-weight:bold;z-index:1;text-shadow:-1px 1px black;text-align:right;
 }
 .Info1{
-position:absolute;top:264px;left:75px;font-size:24px;color:white;text-shadow:-2px 2px #274478;
+position:absolute;top:264px;left:75px;font-size:24px;color:white;text-shadow:-2px 2px black;
 }
 #InfoBox{
 position:absolute;top:400px;left:60px;display:inline-block;
-text-shadow: -2px 2px #274478;
-width:900px;height:300px;color:white;
+text-shadow: -2px 2px black;
+width:900px;height:300px;color:yellow;
 }
 #InfoTitle{
 position:relative;top:0;left:0;
-height:58px;color:white;font-size:42px;font-weight:bolder;overflow:hidden;white-space:nowrap;
+height:58px;color:yellow;font-size:42px;font-weight:bolder;overflow:hidden;white-space:nowrap;
 }
 #InfoVerAuth{
 position:relative;top:0;left:0;
@@ -101,7 +101,7 @@ opacity:1;display:none;z-index:900;
 position:fixed;left:38%;right:0;top:280px;bottom:0px;max-width:100%;max-height:100%;margin:auto;	
 width:900px;height:400px;
 line-height:30px;align-items:left;
-font-family:sans-serif;font-size:28px;text-align:left;color:white;z-index:901;text-shadow: -2px 2px #274478;
+font-family:sans-serif;font-size:28px;text-align:left;color:white;z-index:901;text-shadow: -2px 2px black;
 }
 *:focus{outline:0;
 }
