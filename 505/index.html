@@ -22,8 +22,9 @@ overflow: hidden;
   margin-right:10%;
 }
 button {
-            background-color: white;
-            box-shadow: 0px 0px 10px 0px white;
+            background:rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 15px 0px white;
+            color: white;
             border: 2px solid black;
             border-radius: 10px;
             width: 170px;
@@ -31,7 +32,8 @@ button {
             text-align: center;
 }
 button:hover {
-            box-shadow: 0px 0px 30px 0px white;
+            box-shadow: 0px 0px 35px 0px white;
+            background-color: #0F0F53;
             color: white;
             border-radius: 10px;
 }
@@ -74,9 +76,9 @@ header div{
 <script src="cal.js"></script>
 <div style="text-align:center">
 <br><br>
-<button style='font-size:22px;text-align:center;color:#4863A0' class="pointer" onclick="load_hen213(); return false"><b>Hen v2.1.3</button>
-<button style='font-size:22px;text-align:center;color:#4863A0' class="pointer" onclick="load_hen214b(); return false"><b>Hen v2.1.4b</button>
-<button style='font-size:22px;text-align:center;color:#4863A0' class="pointer" onclick="load_mirahen(); return false"><b>MiraHen18</button>
+<button style='font-size:22px;text-align:center;' class="pointer" onclick="load_hen213(); return false"><b>Hen v2.1.3</button>
+<button style='font-size:22px;text-align:center;' class="pointer" onclick="load_hen214b(); return false"><b>Hen v2.1.4b</button>
+<button style='font-size:22px;text-align:center;' class="pointer" onclick="load_mirahen(); return false"><b>MiraHen18</button>
 <br><br>
 <button style='font-size:22px;text-align:center;color: white; background-color:goldenrod' class="pointer" onclick="load_goldhen(); return false"><b>GoldHen 1.1</button>
 <button style='font-size:22px;text-align:center;color:white;background-color: blue' class="pointer" onclick="load_webrte(); return false"><b>WebRTE</button>
@@ -84,33 +86,33 @@ header div{
 <button style='font-size:22px;text-align:center;color: white; background-color: orangered' class="pointer" onclick="load_orbistoolbox(); return false"><b>Orbis Toolbox</button>
 <br><br><br>
 <h1 style='font-size:25px;text-align:center;color:yellow'>PAYLOADS</h1>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_binloader(); return false"> Bin Loader </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_ftp(); return false">FTP</button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_ftprw(); return false"> FTP RW </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_dumper(); return false"> Dumper </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_updatesdisable(); return false"> Disable Updates </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_updatesenable(); return false"> Enable Updates </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_trpb(); return false"> Trp Backup </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_binloader(); return false"> Bin Loader </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_ftp(); return false">FTP</button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_ftprw(); return false"> FTP RW </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_dumper(); return false"> Dumper </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_updatesdisable(); return false"> Disable Updates </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_updatesenable(); return false"> Enable Updates </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_trpb(); return false"> Trp Backup </button>
 <br><br>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_dbBackup(); return false"> DB Backup </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_dbRestore(); return false"> DB Restore </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_app2usb(); return false"> App2USB </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_todex(); return false"> ToDex </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_ps4debug(); return false"> PS4debug </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_gtav(); return false"> GTA Lotus 1.04 </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_gtav2(); return false"> GTA v ap 2 </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_dbBackup(); return false"> DB Backup </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_dbRestore(); return false"> DB Restore </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_app2usb(); return false"> App2USB </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_todex(); return false"> ToDex </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_ps4debug(); return false"> PS4debug </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_gtav(); return false"> GTA Lotus 1.04 </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_gtav2(); return false"> GTA v ap 2 </button>
 <br><br>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_saveb(); return false"> Save Backup </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_saver(); return false"> Save Restore </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_savem(); return false"> Save Mount</button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_linuxbaikal(); return false"> Linux Baikal </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_linux1g(); return false"> Linux 1Gb </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_linux2g(); return false"> Linux 2Gb </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_linux3g(); return false"> Linux 3Gb </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_saveb(); return false"> Save Backup </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_saver(); return false"> Save Restore </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_savem(); return false"> Save Mount</button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_linuxbaikal(); return false"> Linux Baikal </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_linux1g(); return false"> Linux 1Gb </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_linux2g(); return false"> Linux 2Gb </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_linux3g(); return false"> Linux 3Gb </button>
 <br><br>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_rif(); return false"> Rif Renamer </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_ren(); return false"> Remoteplay </button>
-<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick="load_infinix(); return false"> Infinix </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_rif(); return false"> Rif Renamer </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_ren(); return false"> Remoteplay </button>
+<button style='font-size:20px;text-align:center;' class="pointer" onclick="load_infinix(); return false"> Infinix </button>
 <br><br><br><br><a style='font-size:15px;text-align:center;color:#FFD700;'>
     Exploit By <a style='font-size:15px;text-align:center;color:white;'>
         Leeful&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style='font-size:15px;text-align:center;color:#FFD700;'>
