@@ -1,0 +1,51 @@
+<html>
+<body onload="go()"></body>
+<head>
+<title> PS4-Web-Offline-Activator for 7.02 FW </title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<script>
+function print(){}
+
+var scriptCode = '';
+
+function preloadScripts(lst)
+{
+    for(var i = 0; i < lst.length; i++)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', lst[i], false);
+        xhr.send('');
+        scriptCode += xhr.responseText + '\n';
+    }
+}
+
+function done(){}
+
+window.midExploit = function()
+{
+    preloadScripts(['702.js', 'jb702/c-code.js', 'mira702/mira.js', 'payload.js', 'mira702/c-code.js', 'frontend.js'], go);
+}
+
+window.postExploit = function()
+{
+    history.pushState({}, '', '.');
+    setTimeout(function() //update the screen one last time...
+    {
+        eval.call(window, scriptCode);
+        done();
+    }, 100);
+};
+</script>
+<script src="webkit702/utils.js"></script>
+<script src="webkit702/int64.js"></script>
+<script src="webkit702/ps4.js"></script>
+<button id="input1" onfocus="handle2()"></button>
+<button id="input2"></button>
+<button id="input3" onfocus="handle2()"></button>
+<select id="select1">
+<option value="value1">Value1</option>
+</select>
+</body>
+</html>

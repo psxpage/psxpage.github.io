@@ -1,0 +1,34 @@
+<html>
+    <style>
+body{color: white; background-image:url(1.jpg); background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
+input{width:25px;height:25px;background-color: transparent;}
+button {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+}
+button:hover {
+            box-shadow: 0 5px 50px 0 white;
+            color: white;
+            border-radius: 10px;
+}</style>
+	<head>
+		<title>Enable Browser 7.00 - 7.02</title>
+		<script src="utils.js"></script>
+		<script src="int64.js"></script>
+		<script src="rop.js"></script>
+		<script src="ebrowser.js"></script>
+		<script src="userland.js"></script>
+		<script src="ps4.js"></script>
+
+	</head>
+	<body onload="go()">
+		<button id="input1" onfocus="handle2()"></button>
+		<button id="input2"></button>
+		<button id="input3" onfocus="handle2()"></button>
+		<select id="select1">
+			<option value="value1">Value1</option>
+		</select>
+	</body>
+</html>
