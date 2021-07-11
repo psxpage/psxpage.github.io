@@ -1,0 +1,415 @@
+<html manifest="offlinexmb.cache">
+	<style>
+		/* Modal Content */
+.modal-content {
+  font-family: BFARNAZ;
+  font-size: 18px;
+  position: relative;
+  background-color: #dddddd;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+/* Modal Content */
+.modal-content {
+  font-family: BFARNAZ;
+  font-size: 18px;
+  position: relative;
+  background-color: #dddddd;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+		.button {
+		  background:rgba(0,0,0,0.5);
+                  box-shadow: 0px 0px 15px 0px white;
+		  color: white;
+		  border-radius: 5px;
+		  padding: .5em;
+		  text-decoration: none;
+		  width: 170px;
+                  height: 30px;
+		  display:inline-table;
+		  font-family: system-ui;
+		}
+
+		.button:focus,
+		.button:hover {
+		  box-shadow: 0px 0px 35px 0px white;
+                  background-color: #0F0F53;
+                  color: white;
+                  border-radius: 10px;}
+
+			.temp {
+				  background-color: white;  
+				  border-radius: 5px;
+				  border: 2px solid black;
+				  color: white;
+				  padding: .5em;
+				  text-decoration: none;
+				  display:inline-table;
+				  font-family: system-ui;
+				  font-size: 20px;
+				  text-align: center;
+				  width: 50px;
+				  height: 25px; 
+				  
+					}
+			
+				.temp:focus,
+				.temp:hover {
+				box-shadow: 0 5px 50px 0 white;
+				color: white;
+				border-radius: 10px;
+				cursor: pointer;
+				}
+
+		.titlehead { 
+		  border-radius: 5px;
+		  color: yellow;
+		  padding: .5em;
+		  text-decoration: none;
+		  text-align: center;
+		  margin-top: -10px;
+		  margin-bottom: -10px;
+		  font-family: system-ui;
+		}
+
+		.titlehead:focus,
+		.titlehead:hover {
+		  color: yellow;
+		}
+
+		.bg {
+		  /* The image used */
+		  background-color:#1a1920;
+		  font-family: system-ui;
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+
+		#myProgress {
+		  border: 5px solid #FFFFFF;
+		  border-radius: 5px;
+		  background-color: purple;
+		  height: 45px;
+		  position: absolute;
+		  top:0;
+		  bottom: 250;
+		  left: 150;
+		  right: 150;
+		  margin: auto;
+		}
+
+		#myBar {
+		  width: 0%;
+		  height: 40px;
+		  background-color: #4CAF50;
+		  text-align: center;
+		  line-height: 30px;
+		  color: white;
+		  font-size: 35px;
+		  padding-top: 5px;
+		}
+		
+		.switch {
+		  position: relative;
+		  display: inline-block;
+		  width: 60px;
+		  height: 34px;
+		}
+
+		.switch input { 
+		  opacity: 0;
+		  width: 0;
+		  height: 0;
+		}
+
+		.slider {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: #2196F3;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+		
+		.slider.new {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: #585858;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		.slider:before {
+		  position: absolute;
+		  content: "";
+		  height: 26px;
+		  width: 26px;
+		  left: 4px;
+		  bottom: 4px;
+		  background-color: white;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		input:checked + .slider {
+		  background-color: #2196F3;
+		}
+
+		input:focus + .slider {
+		  box-shadow: 0 0 1px #2196F3;
+		}
+
+		input:checked + .slider:before {
+		  -webkit-transform: translateX(26px);
+		  -ms-transform: translateX(26px);
+		  transform: translateX(26px);
+		}
+
+		/* Rounded sliders */
+		.slider.round {
+		  border-radius: 34px;
+		}
+
+		.slider.round:before {
+		  border-radius: 50%;
+		}
+
+		.fail{
+        float:right;
+        margin-right:2.25%;
+        margin-top: 11px;
+        font-weight:bold;
+        font-size:28px;
+        color: white;
+         }
+       .pass {
+       float:left;
+       margin-left:1.25%;
+       font-weight:bold;
+       margin-top: 11px;
+       font-size:28px;
+       color: white;
+       }
+	   .pointer {cursor: pointer;}
+	</style>
+	<head>
+		<title>Magnum Host Auto old 7.55</title>
+	</head>
+	<body onload="go()" class="bg">
+		<script>
+			if(localStorage.jb==null){localStorage.jb='jb.js';}
+			if(localStorage.autoExploit==null){localStorage.autoExploit=false;}
+			var fw = (navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'))).replace('.', '');;
+			if(window.applicationCache.status==2){localStorage.is75XV2Cached=true;}
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";localStorage.is75XV2Cached=false;};
+			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";localStorage.is75XV2Cached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page to Run the Exploit!!"; }, 1500);};
+		</script>
+		<script>
+			var width = 0;
+			function frame1() {
+				var elem = document.getElementById("myBar");
+				var i=0;
+				var id = setInterval(fra, 10);
+				function fra(){
+				  if(i<10 && width<100){
+					  width++;
+					  elem.style.width = width + "%";
+					  elem.innerHTML = width  + "%";
+				  } i++;
+				}
+			}
+		</script>
+		<script>
+		function print(){}
+
+		var scriptCode = '';
+
+		function preloadScripts(lst)
+		{	
+			scriptCode = '';
+			for(var i = 0; i < lst.length; i++)
+			{
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', lst[i], false);
+				xhr.send('');
+				scriptCode += xhr.responseText + '\n';
+			}
+		}
+		
+		function done(){
+			document.getElementById("myProgress").remove();
+			if (localStorage.passcount == null) localStorage.passcount=0;
+            window.passCounter.innerHTML=localStorage.passcount;
+            if (localStorage.failcount == null) localStorage.failcount=0;
+            window.failCounter.innerHTML=localStorage.failcount;
+            document.getElementById('load').innerHTML= '<td align="center" colspan="5">'+
+			'<div style=font-size:16px;text-align:center;color:white;>Set Fan Treshold The PS4 default temp is 79c</div>'+
+			'<a href="#" id="fan50" class="temp" onMouseOver="progress.innerHTML=\'Fan Control Set Temp 50c\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'fan50\'); return false" style="font-size:15px;text-align:center;color:#5B90F6">50c</a>&nbsp;'+
+			'<a href="#" id="fan55" class="temp" onMouseOver="progress.innerHTML=\'Fan Control Set Temp 55c\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'fan55\'); return false" style="font-size:15px;text-align:center;color:#5B90F6">55c</a>&nbsp;'+
+			'<a href="#" id="fan60" class="temp" onMouseOver="progress.innerHTML=\'Fan Control Set Temp 60c\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'fan60\'); return false" style="font-size:15px;text-align:center;color:#ff7f7f">60c</a>&nbsp;'+
+			'<a href="#" id="fan65" class="temp" onMouseOver="progress.innerHTML=\'Fan Control Set Temp 65c\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'fan65\'); return false" style="font-size:15px;text-align:center;color:#ff4c4c">65c</a>&nbsp;'+
+			'<a href="#" id="fan70" class="temp" onMouseOver="progress.innerHTML=\'Fan Control Set Temp 70c\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'fan70\'); return false" style="font-size:15px;text-align:center;color:#ff4c4c">70c</a>&nbsp;'+
+			'</td>'+
+			'</tr>'+
+			'<tr>'+
+			'<td align="center" colspan="3">'+
+            '<br/><div style=font-size:20px;text-align:center;color:yellow;>JAILBREAK</div>'+
+			'<tr style="color:white;">'+
+			'<td id="aexp" colspan="2"  align="right" style="width: 12%;font-family: system-ui;font-size: 20px ;">'+
+			'Autoload Kernel Exploit &nbsp;</td>'+
+			'<td style="width: 10%;"><label class="switch"><input id="tog1" onclick="if(document.getElementById(\'tog1\').checked){localStorage.autoExploit=true;}else{localStorage.autoExploit=false;}" type="checkbox"><span class="slider new round"></span></label></td>'+
+			'</tr>'+
+			'<tr id="mexp">'+
+			'<td align="center" colspan="3">'+
+			'<a href="#" id="exploit" class="button" onclick="toggle_payload(\'exploit\'); return false" style="background-color:white;color:#4863A0;width:30%;height: 25px;">Click Here To Load Kernel Exploit</a>&nbsp;</td>'+
+			'</tr>'+
+			'<br/>'+
+			'</td>'+
+			'</tr>'+
+			'<td align="center" id="jailbreak" colspan="6" >'+
+            '<br/><div style=font-size:20px;text-align:center;color:yellow;>MIRA / GOLDHEN</div>'+
+			'<a href="#" id="mira75X" class="button pointer" onMouseOver="progress.innerHTML=\'Mira by Al-Azif\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'mira75X\'); return false">Mira 75X</a>&nbsp;'+
+			'<a href="#" id="mirab" class="button pointer" onMouseOver="progress.innerHTML=\'Mira2b Spoof to 9.99\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'mirab\'); return false">Mira2b</a>&nbsp;'+
+			'<a href="#" id="goldhen10" class="button pointer" onMouseOver="progress.innerHTML=\'GoldHen v1.0 By SiSTRo\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'goldhen10\'); return false" style="background-color: goldenrod;color: white">GoldHen V1.0</a>&nbsp;'+
+			'<a href="#" id="goldhen11b7" class="button pointer" onMouseOver="progress.innerHTML=\'GoldHen v1.1 Beta 7 by SiSTRo\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'goldhen11b7\'); return false" style="background-color: goldenrod;color: white">GoldHen V1.1B7</a>&nbsp;'+
+			'<a href="#" id="goldhen11" class="button pointer" onMouseOver="progress.innerHTML=\'GoldHen v1.1 by SiSTRo\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'goldhen11\'); return false" style="background-color: goldenrod;color: white">GoldHen V1.1</a>&nbsp;'+
+			'</td>'+
+			'</tr>'+
+			'<br/>'+
+			'<tr>'+
+			'<td align="center" colspan="6">'+
+            '<br/><div style=font-size:20px;text-align:center;color:yellow;>PAYLOADS</div>'+
+	        '<a href="#" id="orbistoolbox" class="button pointer" onMouseOver="progress.innerHTML=\'OSM Orbis ToolBox Alpha Build 1167\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'orbistoolbox\'); return false" style="background-color: orangered;color: white">Orbis-ToolBox</a>&nbsp;'+
+			'<a href="#" id="webrte" class="button pointer" onMouseOver="progress.innerHTML=\'WebRTE requirement to use PS4 Trainer\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'webrte\'); return false" style="background-color: blue;color: white">WebRTE</a>&nbsp;'+
+			'<a href="#" id="ps4trainer" class="button pointer" onMouseOver="progress.innerHTML=\'PS4 Offline Trainer\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="load_trainer(); return false" style="background-color: green;color: white">PS4-Trainer</a>&nbsp;'+
+			'<a href="#" id="webactivator" class="button pointer" onMouseOver="progress.innerHTML=\'Account Web Offline Activator\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'webactivator\'); return false" style="background-color: white;color: blue">Web-Activator</a>&nbsp;'+
+            '<a href="#" id="binloader" class="button pointer" onMouseOver="progress.innerHTML=\'Binloader\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'binloader\'); return false">Bin-Loader</a>&nbsp;'+
+			'<a href="#" id="app2usb" class="button pointer" onMouseOver="progress.innerHTML=\'App to USB\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'app2usb\'); return false">App-2-USB</a>&nbsp;'+
+			'</td>'+
+			'</tr>'+
+			'<br/>'+
+			'<tr>'+
+			'<td align="center" colspan="6">'+
+			'<a href="#" id="backup" class="button pointer" onMouseOver="progress.innerHTML=\'Backup database\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'backup\'); return false">Back-Up</a>&nbsp;'+
+			'<a href="#" id="restore" class="button pointer" onMouseOver="progress.innerHTML=\'Restore database\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'restore\'); return false">Restore</a>&nbsp;'+
+			'<a href="#" id="module" class="button pointer" onMouseOver="progress.innerHTML=\'Kernel Module Dumper\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'module\'); return false">Module-Dumper</a>&nbsp;'+
+			'<a href="#" id="ftp" class="button pointer" onMouseOver="progress.innerHTML=\'FTP server\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'ftp\'); return false">FTP</a>&nbsp;'+
+			'<a href="#" id="todex" class="button pointer" onMouseOver="progress.innerHTML=\'Enable DEX\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'todex\'); return false">To-DEX</a>&nbsp;'+
+            '<a href="#" id="disableaslr" class="button pointer" onMouseOver="progress.innerHTML=\'Disable Aslr\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'disableaslr\'); return false">Disable-Aslr</a>&nbsp;'+
+            '</td>'+
+			'</tr>'+
+			'<br/>'+
+			'<tr>'+
+			'<td align="center" colspan="6">'+
+			'<a href="#" id="enablebrowser" class="button pointer" onMouseOver="progress.innerHTML=\'Enable Browser\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'enablebrowser\'); return false">Enable-Browser</a>&nbsp;'+
+			'<a href="#" id="historyblocker" class="button pointer" onMouseOver="progress.innerHTML=\'History Blocker\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'historyblocker\'); return false">History-Blocker</a>&nbsp;'+
+			'<a href="#" id="kerneldumper" class="button pointer" onMouseOver="progress.innerHTML=\'Kernel Dumper\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'kerneldumper\'); return false">Kernel-Dumper</a>&nbsp;'+
+			'<a href="#" id="linux1gb" class="button pointer" onMouseOver="progress.innerHTML=\'Linux Loader 1GB\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'linux1gb\'); return false">Linux-1GB</a>&nbsp;'+
+			'<a href="#" id="linux3gb" class="button pointer" onMouseOver="progress.innerHTML=\'Linux Loader 3GB\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'linux3gb\'); return false">Linux-3GB</a>&nbsp;'+
+            '<a href="#" id="kernelclock" class="button pointer" onMouseOver="progress.innerHTML=\'Reset Kernel Clock\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'kernelclock\'); return false">Kernel-Clock</a>&nbsp;'+
+            '</td>'+
+			'</tr>'+
+			'<br/>'+
+			'<tr>'+
+			'<td align="center" colspan="6">'+
+			'<a href="#" id="idu" class="button pointer" onMouseOver="progress.innerHTML=\'Disable IDU Mode\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'idu\'); return false">Exit-IDU</a>&nbsp;'+
+			'<a href="#" id="ps4debug" class="button pointer" onMouseOver="progress.innerHTML=\'CTN PS4Debug with rest mode support\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'ps4debug\'); return false">PS4Debug</a>&nbsp;'+
+			'<a href="#" id="disableupdates" class="button pointer" onMouseOver="progress.innerHTML=\'Disable Updates\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'disableupdates\'); return false">Disable-Updates</a>&nbsp;'+
+			'<a href="#" id="enableupdates" class="button pointer" onMouseOver="progress.innerHTML=\'Enable Updates\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'enableupdates\'); return false">Enable-Updates</a>&nbsp;'+
+			'<a href="#" id="dumper" class="button pointer" onMouseOver="progress.innerHTML=\'Games Dumper\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'dumper\'); return false">Dumper</a>&nbsp;'+
+			'<a href="#" id="rifrenamer" class="button pointer" onMouseOver="progress.innerHTML=\'Rif Renamer\'"; onmouseout="progress.innerHTML=\'Magnum Host Auto old 7.55\'" onclick="toggle_payload(\'rifrenamer\'); return false">Rif-Renamer</a>&nbsp;'+
+            '</td>'+
+			'</tr>'+
+			'<tr>'+
+			'<br/> <td align="center" colspan="6">'+
+            '<a style=font-size:20px;text-align:center;color:#FFD700;>'+
+            'Main Owner : <a style= font-size:20px;text-align:center;color:white;>'+
+            'SALT - Find Us In Telegram if you have any kind of issues!:&nbsp;<a href="http://t.me/Salt753194" style= font-size:20px;text-align:center;color:red;>@Salt753194</a></h1>'+
+            '<br><a style= font-size:20px;text-align:center;color:#FFD700;>'+
+            'Credits : <a style=font-size:20px;text-align:center;color:white;>'+
+            'KameleonRE Host Coder <a href="https://twitter.com/KameleonRe" style= font-size:20px;text-align:center;color:red;>KameleonRE</h1><a style= font-size:20px;text-align:center;color:white;>...@Sleirgoevy for Webkit and Kex, @ChendoChap for Patch fixes, @Al-Azif for Patch Fixes, @SiSTRo for Hen and GoldHEN&nbsp;'+
+			'</td>'+
+			'</tr>';
+
+             //FINISH HIM :) KAME...
+			if(localStorage.autoExploit=="true"){document.getElementById('tog1').checked=true;document.getElementById('toggleExploit').style.display='table-row';document.getElementById('mexp').style.display='none';}else{document.getElementById('tog1').checked=false;document.getElementById('toggleExploit').style.display='none';document.getElementById('mexp').style.display='table-row';}
+			}
+		
+		
+		window.midExploit = function()
+		{
+			if(localStorage.autoExploit=="true")
+				preloadScripts(['common/exploit.js','jb/'+localStorage.jb]);
+			else
+				preloadScripts(['common/exploit.js']);
+		}
+
+		window.postExploit = function()
+		{
+			setTimeout(function()
+			{	
+				eval.call(window, scriptCode);
+				done();
+			}, 100);
+
+		};
+		
+		window.postPayload = function()
+		{
+			setTimeout(function()
+			{	
+				eval.call(window, scriptCode);
+				//done();
+			}, 100);
+
+		};
+
+		</script>
+		<script src="./webkit/utils.js"></script>
+		<script src="./webkit/int64.js"></script>
+		<script src="./webkit/ps4.js"></script>
+		<a class="pass" style="color: green;text-shadow: 4px 4px 4px black;font-size:30px; font-weight: bold;">Pass = <span id=passCounter></span></a><a  class="fail" style="color: red;text-shadow: 4px 4px 4px black;font-size:30px; font-weight: bold;">Fail = <span id=failCounter></span> </a><h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><br>
+		<script>
+			if (localStorage.passcount == null) localStorage.passcount=0;
+			window.passCounter.innerHTML=localStorage.passcount;
+			if (localStorage.failcount == null) localStorage.failcount=0;
+			window.failCounter.innerHTML=localStorage.failcount;
+			</script>
+		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
+		<button style="opacity:0" id="input2"></button>
+		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
+		<select style="opacity:0" id="select1">
+			<option value="value1">Value1</option>
+		</select>
+		<h1 id="myProgress">
+		  <div id="myBar">0%</div>
+		</h1>
+		<table id="load" align="center" style="width:1300px;margin-top:10px;">
+		</table>
+	</body>
+</html>
