@@ -1,57 +1,96 @@
-<html>
+﻿<html>
+
+  <style>
+body{color: white; background-color: #1a1920; background-attachment:fixed; background-size:100%; background-repeat:no-repeat;}
+input{width:25px;height:25px;background-color: transparent;}
+    button {
+                background:rgba(0,0,0,0.5);
+                box-shadow: 0px 0px 15px 0px white;
+                border: 2px solid black;
+                color: white;
+                border-radius: 10px;
+                text-align: center;
+    }
+    button:hover {
+                box-shadow: 0px 0px 35px 0px white;
+                background-color: #0F0F53;
+                color: white;
+                border-radius: 10px;
+    }</style>
 <head>
-    <meta charset="utf-8" />
-    <title>Magnum Host for PS4 Jailbreak</title>
-    <link rel="stylesheet" href="img/index.css">
-</head>  
-<style>
-.btn {
-width: 480px;
-height: 60px;
-padding-top: 10px;
-padding-bottom: 10px;
-text-align: center;
-text-decoration: none;
-font-size: 25px;
-margin-top: 15px;
-margin-bottom: 5px;
-margin-left: 15px;
-margin-right: 5px;
-border-bottom-width: 0px;
-border-right-width: 0px;
-border-top-width: 0px;
-border-left-width: 0px;
--webkit-transition-duration: 0.4s;
-transition-duration: 0.4s;
-cursor: pointer;
+<meta charset="utf-8">
+<title>Magnum Host For PS4 Jailbreak</title>
+<link rel="stylesheet prefetch" href="Style.css">
+    
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+</head>
+<body class="bg-darker">
+<div id="container"  >
+<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
+<div id=CacheProgress><div id=CacheBar></div></div></div>
+<br><span id="date" ></span><span id="clock" ></span><h1 style='font-size:30px;text-align:center;color:yellow;text-shadow: 4px 4px 4px black;'>MAGNUM HOST MENU&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+<h3 style='font-size:20px;text-align:center;color:white;text-shadow: 4px 4px 4px black;'><i>Only for Jailbreak Your PlayStation 4</i></h3>
+<div id="myModal" class="modal">
+  <!-- MODAL CONTENTS -->
+  <div class="modal-content">
+  <span class="close"></span>
+    <div class="modal-body">
+
+    <br><br><br>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
 }
-.btn-main {
-background:rgba(0,0,0,0.5);
-color: white;
-border-radius: 10px;
+span.onclick = function() {
+  modal.style.display = "none";
 }
-.btn-main:hover {
-background-color: #0F0F53;
-color: white;
-border-radius: 10px;
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
-</style>
-<body style="color:yellow;font-size:20px;text-align:center;" class="bg">
-<h1 style='font-size:40px;margin:0;text-shadow: 4px 4px 4px #000000'>Magnum Host Menu</h1>
-<h3 style='font-size:20px;color:white;margin:0;text-shadow: 4px 4px 4px #000000'><i>Only for Jailbreak Your PlayStation 4</i></h3>
-<br><br><br>
-<h2 id=msgs style='text-shadow: 0px 4px 4px #000000'>Only for PS4 Firmware 5.05/6.72/7.0X/7.5X</h2>
-<button><a onMouseOver="msgs.innerHTML='Jailbreak payload for PS4 5.05'" onmouseout="msgs.innerHTML='Please.. Choose your Jailbreak Host :'" href="505/index.html"><img src="img/505.png"></a></button>&nbsp;
-<button><a onMouseOver="msgs.innerHTML='Jailbreak payload for PS4 6.72'" onmouseout="msgs.innerHTML='Please.. Choose your Jailbreak Host :'" href="672/index.html"><img src="img/672.png"></a></button>&nbsp;
-<button><a onMouseOver="msgs.innerHTML='Jailbreak payload for PS4 7.02'" onmouseout="msgs.innerHTML='Please.. Choose your Jailbreak Host :'" href="702/index.html"><img src="img/702.png"></a></button>&nbsp;
-<button><a onMouseOver="msgs.innerHTML='Jailbreak payload for PS4 7.5x - New Exploit By Sleirsgoevy 3rd June'" onmouseout="msgs.innerHTML='Please.. Choose your Jailbreak Host :'" href="75X/index.html"><img src="img/75x.png"></a></button>&nbsp;
-<button><a onMouseOver="msgs.innerHTML='Jailbreak payload only for PS4 7.55 - New Exploit By Sleirsgoevy 3rd June'" onmouseout="msgs.innerHTML='Please.. Choose your Jailbreak Host :'" href="755/index.html"><img src="img/755.png"></a></button>
+</script>
+<div style="text-align:center" id="MyItems">
+<br><br>
+<h1 id=Magnum style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white'>Status</h1>
 <br>
-<a href="https://karo218.ir/restore/index.html"><button class="btn btn-main">PS4 Offline Trainer User's Guide By Karo</button></a>
-<br><br><br><br><i>
+<a href="https://magnumgame.my.id/Trainer/index.html"><button style='width:470px;height:60px;font-size:22px;text-align:center;background-color:#0F0F53;' class="pointer" onMouseOver="Magnum.innerHTML='PS4 Offline Trainer By TylerMods'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> PS4 Offline Trainer (11.07.2021)</B></button></a>
+<br><br>
+<a href="./505/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host For 5.05'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 5.05 </B></button></a>
+<a href="./672/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host For 6.72'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 6.72 </B></button></a>
+<a href="./702/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host For 7.02'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 7.02 </B></button></a>
+<a href="./75X/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host For 7.5X'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 7.5X </B></button></a>
+<a href="./755/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host For 7.55'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 7.55 </B></button></a>
+<br><br>
+<a href="./755Aold/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host Auto old For 7.55'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 7.55A old</B></button></a>
+<a href="./755Mold/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host Manual old For 7.55'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 7.55M old</B></button></a>
+<a href="./755Anew/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host Auto new For 7.55'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 7.55A new</B></button></a>
+<a href="./755Mnew/index.html"><button style='font-size:22px;text-align:center;' class="pointer" onMouseOver="Magnum.innerHTML='Magnum Host Manual new For 7.55'" ; onmouseout="Magnum.innerHTML='Status'" type="button"><B> 7.55M new</B></button></a>
+<br><br><br><br><br><br><br><i>
 <a style='font-size:15px;text-align:center;color:#FFD700;'>*Exploit By<a style='font-size:15px;text-align:center;color:white;'> Leeful & Sleirsgoevy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style='font-size:15px;text-align:center;color:#FFD700;'>*Host By<a style='font-size:15px;text-align:center;color:white;'> Magnum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style='font-size:15px;text-align:center;color:#FFD700;'>*Hen/GoldHen By<a style='font-size:15px;text-align:center;color:white;'> SiSTRo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style='font-size:15px;text-align:center;color:#FFD700;'>*Mira By<a style='font-size:15px;text-align:center;color:white;'> Al-Azif &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PS4 Firmware <span id="PS4fw"></span>
 <script>
 UA = navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (") + 28, navigator.userAgent.indexOf(") Apple")); PS4fw.innerHTML=""+UA+" Detected";
 </script>
-</body>
-</html>
+</div>
+    </body>
+    </html>
