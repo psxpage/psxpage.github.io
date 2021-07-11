@@ -2,14 +2,6 @@
 {
     background: none
 }
-.msgs {
-
- float:center;
-}
-.karo {
-
- margin-top: 0px;
-}
 .vid
 {
     object-fit: inherit;
@@ -30,9 +22,7 @@
 .form-control::placeholder
 {
     color: #CCCCCC;
-    
 }
-
 .form-control:focus {
 
     color: #fff;
@@ -53,10 +43,10 @@
 }
 
 .bg-darker {
-    background-color: #1A1920 !important;
+    background-image: url(wallpaper.jpg);
 }
 .modal-body {
-    background-color: #1A1920;
+    background-color: #24272b;
     padding-bottom: 2rem;
 }
 .modal-footer
@@ -77,7 +67,6 @@
 .modal-content
 {
     color: white;
-	
 }
 .switch input {
     display: none;
