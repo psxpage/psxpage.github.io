@@ -2,12 +2,6 @@ CACHE MANIFEST
 # v2.5.5 Self-Host 
 
 1.jpg
-2.jpg
-3.jpg
-4.jpg
-5.jpg
-6.jpg
-7.jpg
 avatar.bin
 binLoader.bin
 cache.bin
@@ -85,9 +79,6 @@ icons\fakeusb.png
 icons\fan.png
 icons\ftp.png
 icons\gtav.png
-icons\hen.png
-icons\hen11.png
-icons\henb.png
 icons\history_blocker.png
 icons\kdumper.png
 icons\keydumper.png
