@@ -78,24 +78,24 @@ Re-Open The Browser To Continue...<hr>
 </div>
 <div id=jbSection style=display:block>
 <div id=statsMsgSection style="display:block;font-size:16px;margin-top:-4px;">
-Exploit Stats:&nbsp; Pass = <span id=passCounterSL></span>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;Fail = <span id=failCounterSL></span><hr>
+Exploit Stats:&nbsp; Pass = <span id=passCounterSL></span>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;Fail = <span id=failCounterSL></span>
 </div>
 <div id=opt1 style=display:block>
 <span id=justExp>
-<h1 style='font-size:18px;'>Auto-Load Mode Settings</h1>
-<button onclick=set_autoexp()> Auto Load Exploit = <span id=autoexp></span><script>autoexp.innerHTML=localStorage.autoexp;autoexpHen.innerHTML=localStorage.autoexpHen;autoexpHenb.innerHTML=localStorage.autoexpHenb;</script></button>
-<button onclick=set_autoexpHen()> Auto Load Exploit + GoldHen v1.1 = <span id=autoexpHen></span><script>autoexp.innerHTML=localStorage.autoexp;autoexpHen.innerHTML=localStorage.autoexpHen;autoexpHenb.innerHTML=localStorage.autoexpHenb;</script></button>
-<button onclick=set_autoexpHenb()> Auto Exploit + HEN v2.1.3b = <span id=autoexpHenb></span><script>autoexp.innerHTML=localStorage.autoexp;autoexpHen.innerHTML=localStorage.autoexpHen;autoexpHenb.innerHTML=localStorage.autoexpHenb;</script></button>
-<br><br><hr>
-<h1 style='font-size:18px;'>Load The Exploit Manually</h1>
-<button onclick=load_Exp()> Load The Exploit </button> or 
-<button onclick=load_ExpHen()> Load The Exploit + GoldHen v1.1 </button> or 
-<button onclick=load_ExpHenb()> Load The Exploit + HEN v2.1.3b </button>
+<h1 style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow'>Auto-Load Mode Settings</h1>
+<button style='font-size:20px;text-align:center;width:280px;height:40px;' class="pointer" onclick=set_autoexp()> Auto Exploit = <span id=autoexp></span><script>autoexp.innerHTML=localStorage.autoexp;autoexpHen.innerHTML=localStorage.autoexpHen;autoexpHenb.innerHTML=localStorage.autoexpHenb;</script></button>
+<button style='font-size:20px;text-align:center;width:280px;height:40px;' class="pointer" onclick=set_autoexpHen()> Auto GoldHen v1.1 = <span id=autoexpHen></span><script>autoexp.innerHTML=localStorage.autoexp;autoexpHen.innerHTML=localStorage.autoexpHen;autoexpHenb.innerHTML=localStorage.autoexpHenb;</script></button>
+<button style='font-size:20px;text-align:center;width:280px;height:40px;' class="pointer" onclick=set_autoexpHenb()> Auto HEN v2.1.3b = <span id=autoexpHenb></span><script>autoexp.innerHTML=localStorage.autoexp;autoexpHen.innerHTML=localStorage.autoexpHen;autoexpHenb.innerHTML=localStorage.autoexpHenb;</script></button>
+<br><br>
+<h1 style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow'>Load The Exploit Manually</h1>
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=load_Exp()> Load Exploit </button> or 
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=load_ExpHen()> Load GoldHen v1.1 </button> or 
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=load_ExpHenb()> Load HEN v2.1.3b </button>
 </span>
 <span id=henSection style=display:none>
-<button onclick=load_HEN()> Load GoldHen v1.1 </button>&nbsp; or &nbsp;
-<button onclick=load_HENb()> Load HEN v2.1.3b </button>&nbsp; or &nbsp;
-<button onclick=load_binloader()> Load A Bin File </button> 
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=load_HEN()> Load GoldHen v1.1 </button>&nbsp; or &nbsp;
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=load_HENb()> Load HEN v2.1.3b </button>&nbsp; or &nbsp;
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=load_binloader()> Load A Bin File </button> 
 </span>
 </div>
 </div>
@@ -103,9 +103,9 @@ Exploit Stats:&nbsp; Pass = <span id=passCounterSL></span>&nbsp;&nbsp;&nbsp;:&nb
 <div id=plstats style="font-size:16px;margin-top:-4px;">Exploit and HEN <span id=henVer></span> Loaded Successfully.&nbsp;&nbsp;&nbsp;
 Exploit Stats:&nbsp; Pass = <span id=passCounterSL2></span>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;Fail = <span id=failCounterSL2></span>
 </div><br><br>
-<button style='font-size:20px;text-align:center;width:330px;height:40px;' class="pointer" onclick=set_autoexp()><B> Auto Load Exploit </B><span id=autoexp2 style="color:black"></span><script>autoexp2.innerHTML=localStorage.autoexp;autoexpHen2.innerHTML=localStorage.autoexpHen;autoexpHenb2.innerHTML=localStorage.autoexpHenb;</script></button>
-<button style='font-size:20px;text-align:center;width:330px;height:40px;background-color:goldenrod' class="pointer" onclick=set_autoexpHen()><B> AutoExploit + GoldHen v1.1 </B><span id=autoexpHen2></span><script>autoexp2.innerHTML=localStorage.autoexp;autoexpHen2.innerHTML=localStorage.autoexpHen;autoexpHenb2.innerHTML=localStorage.autoexpHenb;</script></button>
-<button style='font-size:20px;text-align:center;width:330px;height:40px;' class="pointer" onclick=set_autoexpHenb()><B> AutoExploit + HEN v2.1.3b </B><span id=autoexpHenb2></span><script>autoexp2.innerHTML=localStorage.autoexp;autoexpHen2.innerHTML=localStorage.autoexpHen;autoexpHenb2.innerHTML=localStorage.autoexpHenb;</script></button>
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=set_autoexp()><B> Auto Exploit </B><span id=autoexp2 style="color:black"></span><script>autoexp2.innerHTML=localStorage.autoexp;autoexpHen2.innerHTML=localStorage.autoexpHen;autoexpHenb2.innerHTML=localStorage.autoexpHenb;</script></button>
+<button style='font-size:20px;text-align:center;width:270px;height:40px;background-color:goldenrod' class="pointer" onclick=set_autoexpHen()><B> Auto GoldHen v1.1 </B><span id=autoexpHen2></span><script>autoexp2.innerHTML=localStorage.autoexp;autoexpHen2.innerHTML=localStorage.autoexpHen;autoexpHenb2.innerHTML=localStorage.autoexpHenb;</script></button>
+<button style='font-size:20px;text-align:center;width:270px;height:40px;' class="pointer" onclick=set_autoexpHenb()><B> Auto HEN v2.1.3b </B><span id=autoexpHenb2></span><script>autoexp2.innerHTML=localStorage.autoexp;autoexpHen2.innerHTML=localStorage.autoexpHen;autoexpHenb2.innerHTML=localStorage.autoexpHenb;</script></button>
 <br><br>
 <button style='font-size:20px;text-align:center;background-color:blue' class="pointer" onclick=load_webrte()><B> WebRTE </button>
 <a href="http://magnumgame.my.id/Trainer/index.html"><button style='font-size:20px;text-align:center;color: white;background-color:green' class="pointer" type="button"><B> PS4 TRAINER </B></button></a>
