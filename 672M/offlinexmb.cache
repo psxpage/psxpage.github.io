@@ -1,7 +1,6 @@
 CACHE MANIFEST 
 # v2.5.5 Self-Host 
 
-m.jpg
 avatar.bin
 binLoader.bin
 cache.bin
@@ -23,6 +22,7 @@ jb2.js
 LICENSE
 linuxbaikal.bin
 linuxhdd.bin
+m.jpg
 main.css
 materialize.css
 materialize.js
@@ -36,6 +36,7 @@ pl_DumperU.bin
 pl_fakeusb.bin
 pl_fanthresh.bin
 pl_FTP.bin
+pl_HENGold10.bin
 pl_historyBlocker.bin
 pl_kernelDumper.bin
 pl_linux.bin

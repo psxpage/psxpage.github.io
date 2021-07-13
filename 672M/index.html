@@ -151,6 +151,7 @@ window.failCounter.innerHTML=localStorage.failcount;
     lang:localStorage.getItem("lang"),
     selectedTheme:localStorage.getItem("theme"),
     payloads:[
+     {name:"GOLDHEN 1.0",icon:"icons/mira.png",eng_detail:"GOLD HEN 1.0 By Sistro"},
      {name:"GOLDHEN 1.1",icon:"icons/mira.png",eng_detail:"GOLD HEN 1.1 By Sistro : Homebrew Enabler - Debug Settings - RPI - sys_dynlib_dlsym Patch - UART Enabler - Never Disable Screenshot - Remote Play Enabler - Persistent FTP on 2121 port (Rest Mode Support) - FW Update Block - VR , Rest Mode , External HDD , Official External HDD Format , Debug Trophies Support.",fa_detail:"گلد هن نسخه 1.1 از سیسترو : Homebrew Enabler - Debug Settings - RPI - sys_dynlib_dlsym Patch - UART Enabler - Never Disable Screenshot - Remote Play Enabler - Persistent FTP on 2121 port (Rest Mode Support) - FW Update Block - VR , Rest Mode , External HDD , Official External HDD Format , Debug Trophies Support"},
 	 {name:"HEN 2.1.3",icon:"icons/mira.png",eng_detail:"Hen v2.1.3 by SiSTRo : Debug settings - Remote PKG installer - UART Enabler - VR Support - Rest Mode Support - FW Version Spoof to 9.99 - Debug Trophies Support - Remote Play Enabler.",fa_detail:"Hen 2.1.3 به همراه اضافه شدن قابلیت فعالسازی همزمان Remote Play"},
 	 {name:"HEN 2.1.3b",icon:"icons/mira.png",eng_detail:"Hen v2.1.3b : Hen 2.1.3 + FW Version Spoof to 7.51,Rest Mode Support,Fix error debug setting.",fa_detail:"آپدیت هن 2.1.3 :اسپوف فریمور به 7.51  "},
@@ -212,130 +213,133 @@ window.failCounter.innerHTML=localStorage.failcount;
    },
    methods:{
     loadPlayload: function(key){
-	 if(key==0){//load GOLD HEN v1.1
+         if(key==0){//load GOLD HEN v1.0
+	 PLfile="pl_HENGold10.bin";
+     SALTX.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt1.innerHTML="<div>Loading GOLDHEN v1.0 ...</div>";  setTimeout(parent.jailbreak,500);}
+	 if(key==1){//load GOLD HEN v1.1
 	 PLfile="goldhen_1.1_672.bin";
      SALTX.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt1.innerHTML="<div>Loading GOLDHEN v1.1 ...</div>";  setTimeout(parent.jailbreak,500);}
-     if(key==1){//load HEN 2.1.3
+     if(key==2){//load HEN 2.1.3
 	 PLfile="hen213.bin";
 	 SALTX.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none'; txt1.innerHTML="<div>Loading HEN v2.1.3 ...</div>"; setTimeout(parent.jailbreak,500);
        }
-     if(key==2){//load HEN 2.1.3b
+     if(key==3){//load HEN 2.1.3b
 	 PLfile="hen213b.bin";
      SALTX.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt1.innerHTML="<div>Loading HEN v2.1.3b ...</div>";  setTimeout(parent.jailbreak,500);}
-	 if(key==3){//load mira 
+	 if(key==4){//load mira 
 	 PLfile="pl_mira.js";
 	 SALTM.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txtm.innerHTML="<div>Loading Mira ...</div>";    setTimeout(parent.jailbreakm,500);}
-	 if(key==4){//load mira Unofficial
+	 if(key==5){//load mira Unofficial
 	 PLfile="pl_mira_unofficial.js";
 	 SALTM.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txtm.innerHTML="<div>Loading Mira Unofficial ...</div>"; setTimeout(parent.jailbreakm,500);}
-	 if(key==5){//load Orbis Toolbox
+	 if(key==6){//load Orbis Toolbox
 	 PLfile="pl_Orbis_Toolbox.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Orbis Toolbox ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==6){//load binloader
+	 if(key==7){//load binloader
 	 PLfile="binLoader.bin";
      txt0.innerHTML="<div>Binloader Loading...</div>"; txt2.innerHTML="After Load, Send Payload To Port 9021"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==7){//load dumper
+	 if(key==8){//load dumper
 	 PLfile="pl_DumperG.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Dumper ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==8){//load dumper
+	 if(key==9){//load dumper
 	 PLfile="pl_DumperU.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Dumper ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==9){//load dumper
+	 if(key==10){//load dumper
 	 PLfile="pl_DumperGU.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Dumper ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==10){//load dumper
+	 if(key==11){//load dumper
 	 PLfile="pl_DumperM.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Dumper ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==11){//load kerneldump
+	 if(key==12){//load kerneldump
 	 PLfile="pl_kernelDumper.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Kernel Dumper ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==12){//load ftp
+	 if(key==13){//load ftp
 	 PLfile="pl_FTP.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading FTP ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==13){//load app2usb
+	 if(key==14){//load app2usb
 	 PLfile="pl_app2usb.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading APP2USB ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==14){//load historyblock
+	 if(key==15){//load historyblock
 	 PLfile="pl_historyBlocker.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading History Blocker ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==15){//load updatesdisable
+     if(key==16){//load updatesdisable
 	 PLfile="pl_updatesDisable.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Update Disable ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==16){//load updatesenable
+     if(key==17){//load updatesenable
 	 PLfile="pl_updatesEnable.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Update Enable ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==17){//load dbBackup
+     if(key==18){//load dbBackup
 	 PLfile="pl_dbBackup.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading DB Backup ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==18){//load dbRestore
+     if(key==19){//load dbRestore
 	 PLfile="pl_dbRestore.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading DB Restore ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==19){//load TrophyBackup
+     if(key==20){//load TrophyBackup
 	 PLfile="pl_Trophy_Backup_With_Screenshots.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Trophy Backup+Screenshots ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==20){//load TrophyRestore
+     if(key==21){//load TrophyRestore
 	 PLfile="pl_Trophy_Restore_With_Screenshots.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Trophy Restore+Screenshots ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==21){//load remoteplay
+	 if(key==22){//load remoteplay
 	 PLfile="pl_mira_unofficial.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading RemotePlay ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==22){//load todex
+     if(key==23){//load todex
 	 PLfile="pl_ToDEX.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading ToDEX ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==23){//load todev
+	 if(key==24){//load todev
 	 PLfile="pl_ToDEV.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading ToDEV ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==24){//load tokratos
+	 if(key==25){//load tokratos
 	 PLfile="pl_ToKratos.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading ToKratos ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==25){//load ps4debug
+     if(key==26){//load ps4debug
 	 PLfile="pl_ps4debug.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading PS4debug ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==26){//load webrtw
+     if(key==27){//load webrtw
 	 PLfile="WebRTE.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading WebRTE ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==27){//load fakeusb
+     if(key==28){//load fakeusb
 	 PLfile="pl_fakeusb.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading FakeUSB ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==28){//load EAP Key Dumper
+     if(key==29){//load EAP Key Dumper
 	 PLfile="EAP.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading EAP Key Dumper ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-     if(key==29){//load fan control
+     if(key==30){//load fan control
 	 msgs2.innerHTML="<div>Loading Fan Control ...</div>";
       setTimeout(function(){
        msgs2.style.display="none";
        temp.style.display="inline";
       },1000);}
-     if(key==30){//load linux
+     if(key==31){//load linux
 	 PLfile="pl_linux.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Linux From USB ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==31){//load Linux Baikal
+	 if(key==32){//load Linux Baikal
 	 PLfile="linuxbaikal.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Linux Baikal ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==32){//load Linux HDD
+	 if(key==33){//load Linux HDD
 	 PLfile="linuxhdd.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Linux From Internal HDD ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-	 if(key==33){//load RifRenamer
+	 if(key==34){//load RifRenamer
 	 PLfile="rifrenamer.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Rifrenaimer ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);} 
-	 if(key==34){
+	 if(key==35){
        this.isPayloadShow=false;
        this.isGtaShow=true;
        document.getElementById("detail").style.marginTop="23%"
      }	
 	 
-	 if(key==35){//load Web Activator
+	 if(key==36){//load Web Activator
 	 PLfile="";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Loading Web Activator ...</div>"; window.location.href = "./activator/index.html";}
      
-     if(key==36){
+     if(key==37){
       window.location.href = "https://magnumgame.my.id/Trainer/index.html";
      }
 
-         if(key==37){//load savebackup
+         if(key==38){//load savebackup
          PLfile="pl_SaveDataBackup.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Save Data Backup ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
-         if(key==38){//load saverestore
+         if(key==39){//load saverestore
          PLfile="pl_SaveDataRestore.bin";
      SALT.style.display = 'block';payloads.style.display = 'none';detail.style.display = 'none';txt0.innerHTML="<div>Save Data Restore ...</div>"; var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);}
 
