@@ -41,7 +41,7 @@ function makeUI()
     root.appendChild(p);
     var italic = document.createElement('i');
     p.appendChild(italic);
-    italic.appendChild(document.createTextNode('NIGHT KING : Click the username to generate a random ID'));
+    italic.appendChild(document.createTextNode('MAGNUM GAME : Click the username to generate a random ID'));
     var tbl = document.createElement('table');
     root.appendChild(tbl);
     var fields = [];
