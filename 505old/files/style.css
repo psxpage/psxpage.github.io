@@ -2,9 +2,9 @@ html{}body{background-color:#1a1920;background-size:cover;background-repeat:no-r
 }
 @font-face {font-family:'Icons';font-style:normal;font-weight:900;src: local('Icons'), url(Icons.ttf) format('truetype');
 }
-.Icon{background:url("img/00.png"),linear-gradient(180deg,#002887,#042A87,#001E63);background-size:100% 100%;background-repeat:no-repeat;cursor:none;
+.Icon{background:url("img/00.png"),background:rgba(0,0,0,0.5);background-size:100% 100%;background-repeat:no-repeat;cursor:none;
 }
-.Icon2{background:url("img/01.png"),linear-gradient(180deg,#002887,#042A87,#001E63);background-size:100% 100%;background-repeat:no-repeat;cursor:none;
+.Icon2{background:url("img/01.png"),background:rgba(0,0,0,0.5);background-size:100% 100%;background-repeat:no-repeat;cursor:none;
 }
 #AutoHenInfo{
 position:absolute;bottom:10px;left:15px;font-size:18px;font-weight:bold;display:inline-block;z-index:1;
