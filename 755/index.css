@@ -1,13 +1,13 @@
 button{
-          background:rgba(0,0,0,0.5);
-          box-shadow: 0px 0px 15px 0px white;
+          background:rgba(0,0,0,0.3);
           width:9.5%;
           height:135px
 } 
 button:hover {
-	 background-color: #1d0040;
+	 background-color:red;
+          
           cursor: pointer;
-          box-shadow: 0px 0px 35px 0px white;
+          box-shadow: 0px 0px 30px 30px #969696;
           border-radius: 20px;
 }
 button img{
