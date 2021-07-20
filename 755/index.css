@@ -1,13 +1,13 @@
 button{
-          background:rgba(0,0,0,0.3);
+          background:rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 10px 0px white;
           width:9.5%;
           height:135px
 } 
 button:hover {
-	 background-color:red;
-          
+          background-color: #1d0040;
           cursor: pointer;
-          box-shadow: 0px 0px 30px 30px #969696;
+          box-shadow: 0px 0px 30px 30px white;
           border-radius: 20px;
 }
 button img{
@@ -15,7 +15,6 @@ button img{
 }
 
 		.bg {
-		  background-image: none;
                   background-color: #1a1920;
 		  font-family: system-ui;
 		  background-position: center;
@@ -24,12 +23,14 @@ button img{
 		}
 .button2 {
 	color: white;
-  background-color: transparent;
-  height:inherit;
-  width: inherit;
+  background:rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px white;
+  height:40px;
+  width: 170px;
 } 
 .button2:hover {
-  background-color:red;
+  background-color:#1d0040;
+  box-shadow: 0px 0px 30px 30px white;
           cursor: pointer;
           border-radius: 0px;
 }
