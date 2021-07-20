@@ -165,9 +165,9 @@ function toggle_payload(pld){
 	}else if(pld == "restore"){
 		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
 		preloadScripts(['payloads/preloader.js', 'payloads/restore.js', 'payloads/loader.js']);
-	}else if(pld == "rifrenamer"){
+	}else if(pld == "orbistoolbox"){
 		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
-		preloadScripts(['payloads/preloader.js', 'payloads/rifrenamer.js', 'payloads/loader.js']);
+		preloadScripts(['payloads/preloader.js', 'payloads/orbistoolbox.bin', 'payloads/loader.js']);
 	}else if(pld == "todex"){
 		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
 		preloadScripts(['payloads/preloader.js', 'payloads/todex.js', 'payloads/loader.js']);
