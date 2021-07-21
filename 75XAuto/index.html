@@ -1,4 +1,4 @@
-<html manifest="75XNKAUTOb6.manifest">
+<html manifest="offlinexmb.cache">
 	<style>
 		/* Modal Content */
 .modal-content {
@@ -33,20 +33,23 @@
   animation-duration: 0.4s
 }
 		.button {
-		  background-color: white; 
-		  color: #4863A0;
+		  background:rgba(0,0,0,0.5);
+                  box-shadow: 0px 0px 10px 0px white;
+		  border-radius: 5px;
+		  color: white;
 		  border-radius: 5px;
 		  padding: .5em;
 		  text-decoration: none;
 		  width: 170px;
-          height: 30px;
+                  height: 30px;
 		  display:inline-table;
 		  font-family: system-ui;
 		}
 
 		.button:focus,
 		.button:hover {
-			box-shadow: 0 5px 50px 0 white;
+			box-shadow: 0px 0px 30px 0px white;
+                        background-color: #1d0040;
             color: white;
             border-radius: 10px;}
 
@@ -75,7 +78,6 @@
 				}
 
 		.titlehead {
-		  background-color: black;  
 		  border-radius: 5px;
 		  color: yellow;
 		  padding: .5em;
@@ -88,14 +90,12 @@
 
 		.titlehead:focus,
 		.titlehead:hover {
-		  box-shadow: 0 5px 50px 0 white;
-		  background-color: rgb(1, 1, 22);
 		  color: yellow;
 		}
 
 		.bg {
 		  /* The image used */
-		  background-image: url("1.jpg");
+		  background-color: #1a1920;
 		  font-family: system-ui;
 		  /* Center and scale the image nicely */
 		  background-position: center;
@@ -106,7 +106,7 @@
 		#myProgress {
 		  border: 5px solid #FFFFFF;
 		  border-radius: 5px;
-		  background-color: blue;
+		  background-color: purple;
 		  height: 45px;
 		  position: absolute;
 		  top:0;
