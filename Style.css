@@ -386,8 +386,6 @@ font-family:sans-serif;font-size:32px;text-shadow: 4px 4px 4px black;text-align:
 #msgs2 {
  font-weight:bold;
  text-shadow: 4px 4px 4px black;
- padding-right: 72px;
- margin-right: 72px;
  font-size:17px;
 }
 .pointer {cursor: pointer;}
