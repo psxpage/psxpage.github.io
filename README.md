@@ -8,4 +8,3 @@
     * Mira by Al-Azif
     * WebRTE by PS4 Trainer
     
-![PHOTO](https://raw.githubusercontent.com/psxpage/psxpage.github.io/main/chrome_fMI1vRm8yI.png)
