@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Magnum Host For Playstation Jailbreak</title>
+<title>Magnum Host GoldHen v2.2.2</title>
 <style type="text/css">
 body {
   background-color: #1A1920;
@@ -12,7 +12,7 @@ body {
  }
  button {
             background:rgba(0,0,0,0.5);
-		    box-shadow: 0 5px 20px 0 white;
+		    box-shadow: 0 0px 10px 0 white;
             border: 2px solid black;
             border-radius: 10px;
             width: 170px;
@@ -26,22 +26,6 @@ button:hover {
             background-color: purple;
             color: white;
             border-radius: 10px;
-}
-#clock{
- float:right;
- margin-right:2.25%;
- margin-top: 18px;
- font-weight:bold;
- font-size:28px;
-  color: white;
-}
-#date {
- float:left;
- margin-left:1.25%;
- font-weight:bold;
- margin-top: 18px;
- font-size:28px;
- color: white;
 }
  .content {
   width:80%;
@@ -149,7 +133,7 @@ button:hover {
   Minute= dt.getMinutes();
      Day=dt.getDate();
    Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
+   Year=dt.getManualYear();
 if (Minute < 10) { Minute = "0" + Minute; };
 if (Hour < 10) { Hour = "0" + Hour; };
 document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
@@ -161,22 +145,22 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 </head>
 <body class="bg-darker">
 <div id="container"  style="">
-<span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'>Magnum Host For Playstation Jailbreak</h1><br>
+<h1 style='font-size:30px;text-align:center;color:yellow;'>Magnum Host GoldHen v2.2.2</h1>
 <h1 id=msgs2 style='font-size:25px;text-align:center;color:white;'>Status</h1>
 <div style="text-align:center"  id="MyItems">
-<a href="pkg/index.html"><button style='font-size:22px;text-align:center;background-color:white;color:black' class="pointer" onMouseOver="msgs2.innerHTML='Homebrew for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Homebrew</B></button></a>
-<a href="firmware/index.html"><button style='font-size:22px;text-align:center;background-color:white;color:black' class="pointer" onMouseOver="msgs2.innerHTML='Firmware for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Firmware</B></button></a><br>
-<a href="505/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Full Host For 5.05'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 5.05</B></button></a>
-<a href="auto505/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:goldenrod;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Only GoldHen v2.2.2 For 5.05'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>GoldHen 5.05</B></button></a><br>
-<a href="672/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Full Host For 6.72'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 6.72 </B></button></a>
-<a href="auto672/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:goldenrod;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Only GoldHen v2.2.2 For 6.72'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>GoldHen 6.72</B></button></a><br>
-<a href="702/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Full Host For 7.02'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 7.02</B></button></a>
-<a href="auto702/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:goldenrod;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Only Goldhen v2.2.2 For 7.02'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>GoldHen 7.02</B></button></a><br>
-<a href="755/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Full Host For 7.5X'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 7.55</B></button></a>
-<a href="auto755/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:goldenrod;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Only Goldhen v2.2.2 For 7.55'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>GoldHen 7.55</B></button></a><br>
-<a href="900/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Full Host For 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 9.00</B></button></a>
-<a href="auto900/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:goldenrod;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Only Goldhen v2.2.2 For 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>GoldHen 9.00</B></button></a><br>
-<a href="NoBD/index.html"><button style='width:355px;height:55px;font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;background-color:blue;color:white' class="pointer" onMouseOver="msgs2.innerHTML='New Host for Broken BD Rom'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Magnum Host NoBD</B></button></a>
+<a href="pkg/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Homebrew for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Homebrew</B></button></a>
+<a href="firmware/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Firmware for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Firmware</B></button></a><br>
+<a href="505/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Manual Host GoldHen v2.2.2 For 5.05'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 5.05</B></button></a>
+<a href="auto505/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Auto Host GoldHen v2.2.2 For 5.05'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto 5.05</B></button></a><br>
+<a href="672/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Manual Host GoldHen v2.2.2 For 6.72'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 6.72 </B></button></a>
+<a href="auto672/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Auto Host GoldHen v2.2.2 For 6.72'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto 6.72</B></button></a><br>
+<a href="702/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Manual Host GoldHen v2.2.2 For 7.02'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 7.02</B></button></a>
+<a href="auto702/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Auto Host GoldHen v2.2.2 For 7.02'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto 7.02</B></button></a><br>
+<a href="755/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Manual HostGoldHen v2.2.2 For 7.55'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 7.55</B></button></a>
+<a href="auto755/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Auto Host GoldHen v2.2.2 For 7.55'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto 7.55</B></button></a><br>
+<a href="900/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Manual Host GoldHen v2.2.2 For 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 9.00</B></button></a>
+<a href="auto900/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Auto Host GoldHen v2.2.2 For 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto 9.00</B></button></a><br>
+<a href="NoBD/index.html"><button style='width:355px;height:55px;font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='New Host for Broken BD Rom'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Magnum Host NoBD</B></button></a>
  </div>
 </div>
 </body>
