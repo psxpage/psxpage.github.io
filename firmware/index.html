@@ -1,0 +1,190 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Firmware for Playstation</title>
+<style type="text/css">
+body {
+  background-color: #1A1920;
+  background:url("img.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:97%;
+ }
+ button {
+            background:rgba(0,0,0,0.5);
+	    box-shadow: 0 0px 10px 0 white;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 175px;
+            height: 43px;            
+            text-align: center;
+            padding: 6px;
+            margin: 0px;
+}
+button:hover {
+            box-shadow: 0 5px 50px 0 white;
+            background-color: purple;
+            color: white;
+            border-radius: 10px;
+}
+ .content {
+  width:80%;
+  margin-left:7.5%;
+  background:rgba(0,0,0,0.5);
+  color:white;
+  margin-top:1%;
+  font-size:25px;
+  text-align:center;
+  border-radius:30px;
+  padding:20px;
+  line-height:40px;
+ }
+ .title {
+  font-size:40px;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-weight:bolder;
+  margin-bottom:10px;
+ }
+ .yellow {
+  color:yellow;
+ }
+ .hue {
+  color:yellow;
+  padding:10px;
+  border-radius:10px;
+  animation:hue 5s linear infinite;
+  -webkit-animation: hue 5s linear infinite;
+  box-shadow: 0px 0px 50px yellow;
+  color:white;
+  background:rgba(255,255,0,0.4);
+ }
+ .hue:hover{
+  color:yellow;
+  background:transparent;
+ }
+ @keyframes hue{
+ 0%{
+ filter:hue-rotate(0deg);
+ -webkit-filter:hue-rotate(0deg);
+ }
+ 10%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 20%{
+ box-shadow: 1px 1px 50px yellow;
+ }
+ 30%{
+ box-shadow: 1px 0px 50px yellow;
+ }
+ 40%{
+  box-shadow: 1px -1px 50px yellow;
+ }
+ 50%{
+ box-shadow: 0px -1px 50px yellow;
+ }
+ 60%{
+ box-shadow: -1px -1px 50px yellow;
+ }
+ 70%{
+ box-shadow: -1px 0px 50px yellow;
+ }
+ 80%{
+ box-shadow: -1px 1px 50px yellow;
+ }
+ 90%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 100%{
+ filter:hue-rotate(360deg);
+ -webkit-filter:hue-rotate(360deg);
+ }
+ }
+ .text {
+  padding-bottom:50px;
+ }
+  .back {
+   font-size:25px;
+   margin-top:10px;
+   display:block;
+   line-height:55px;
+   width:20%;
+   text-decoration:none;
+   height:50px;
+   background:white;
+   color:black;
+   border-radius:15px;
+  }
+  .back:hover{
+   border:2px solid white;
+   background:transparent;
+   box-sizing:border-box;
+   color:white;
+  }
+  .pointer {cursor: pointer;}
+</style>
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+</head>
+<body class="bg-darker">
+<div id="container"  style="">
+<br>
+<div style="text-align:center"  id="MyItems">
+<h1 style='font-size:20px;text-align:center;color:yellow;text-shadow: 4px 4px 4px black;'>PS3 Firmware</h1>
+<a href="https://bit.ly/3lVUmk8"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.87 OFW</B></button></a>
+<a href="https://bit.ly/3xwXjNP"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.87 HFW</B></button></a>
+<a href="https://bit.ly/3KJt2zb"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.87 CFW</B></button></a>
+ <br><br>
+<a href="https://bit.ly/3iaz5kl"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.88 OFW</B></button></a>
+<a href="https://bit.ly/37YJuNz"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.88 HFW</B></button></a>
+<a href="https://bit.ly/3xuimk6"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.88 CFW</B></button></a>
+<br><br>
+<a href="https://bit.ly/39h68B9"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.89 OFW</B></button></a>
+<a href="https://bit.ly/3PhftcH"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.89 HFW</B></button></a>
+<a href="https://bit.ly/3PvICRy"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.89 CFW</B></button></a>
+<br><br>
+  <h1 style='font-size:20px;text-align:center;color:yellow;text-shadow: 4px 4px 4px black;'>PS4 Firmware</h1>
+<a href="https://bit.ly/2VbLI5X"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>5.05 Official</B></button></a>
+<a href="https://bit.ly/3fhglh9"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>5.05 Recovery</B></button></a>
+<a href="https://bit.ly/3ieG5Nl"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>6.72 Official</B></button></a>
+<a href="https://bit.ly/3x9NEsM"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>6.72 Recovery</B></button></a>
+<br><br>
+<a href="https://bit.ly/2TM8CAn"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.02 Official</B></button></a>
+<a href="https://bit.ly/2TLrUG1"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.02 Recovery</B></button></a>
+  <a href="https://bit.ly/37BxCxA"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.50 Official</B></button></a>
+<a href="https://bit.ly/2UcKeIm"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.50 Recovery</B></button></a>
+<br><br>
+  <a href="https://bit.ly/3sclTPh"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.51 Official</B></button></a>
+<a href="https://bit.ly/3jIFwKZ"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.51 Recovery</B></button></a>
+  <a href="https://bit.ly/3xgwgme"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.55 Official</B></button></a>
+<a href="https://bit.ly/378DbmD"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>7.55 Recovery</B></button></a>
+<br><br>
+  <a href="https://bit.ly/3rOX0Jv"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>8.03 Official</B></button></a>
+  <a href="https://bit.ly/3rOHVHP"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>8.03 Recovery</B></button></a>
+<a href="https://bit.ly/2TOutaa"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>8.52 Official</B></button></a>
+<a href="https://bit.ly/3Cb0muX"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>8.52 Recovery</B></button></a>
+	<br><br>
+	<a href="https://bit.ly/3jIy9U8"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>9.00 Official</B></button></a>
+  <a href="https://bit.ly/3xsYi1m"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>9.00 Recovery</B></button></a>
+<a href="https://bit.ly/3JDAbj3"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>9.50 Official</B></button></a>
+<a href="https://bit.ly/3vCa8UH"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>9.50 Recovery</B></button></a>
+</div>
+ </div>
+</div>
+</body>
+</html>
