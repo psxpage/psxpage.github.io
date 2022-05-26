@@ -1,0 +1,733 @@
+<html manifest="offlinexmb.cache"><!--  -->
+<head>
+<meta charset="utf-8">
+<title>Magnum Host Manual GoldHen 5.05 FW</title>
+<style type="text/css">
+html, body {
+margin: 0;
+height: 100%;
+padding: 0;
+overflow: hidden;
+font-family: sans-serif;
+font-size: 20px;
+font-weight: bold;
+text-align: center;  
+width: 100%;
+overflow: hidden;
+}
+#head {
+ font-weight:bold;
+ font-size:20px;
+ color: white;
+  margin-right:10%;
+}
+ button {
+            
+            border: 2px solid black;
+            border-radius: 10px;
+			width: 250px;
+            height: 45px;            
+            text-align: center;
+            padding: 1px;
+            margin: 1px;
+            box-shadow: 0 0px 10px 0 white;
+            background:rgba(0,0,0,0.5);
+}
+button:hover {
+            box-shadow: 0 5px 50px 0 white;
+            color: white;
+            border-radius: 10px;
+            background-color: purple;
+}
+header{
+	height: 3em;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+#clock{
+ float:right;
+ margin-right:2.25%;
+ margin-top: 0px;
+ font-weight:bold;
+ font-size:20px;
+  color: white;
+}
+#date {
+ float:left;
+ margin-left:1.25%;
+ font-weight:bold;
+ margin-top: 5px;
+ font-size:20px;
+ color: white;
+}
+#donate2{
+ float:right;
+ margin-right:2.25%;
+ margin-top: 0px;
+ font-weight:bold;
+ font-size:28px;
+  color: white;
+}
+#donate {
+ float:left;
+ margin-left:1.60%;
+ font-weight:bold;
+ margin-top: 0px;
+ font-size:28px;
+ color: white;
+}
+#msgs {
+ font-weight:bold;
+ padding-right: 60px;
+ margin-right: 60px;
+ font-size:17px;
+}
+header div{
+	height: 100%;
+	display: ruby-text;
+	margin-top: -1.5em;
+}
+.pointer {cursor: pointer;}
+.yellow {
+  color:yellow;
+ }
+ .hue {
+  color:yellow;
+  padding:10px;
+  border-radius:10px;
+  animation:hue 5s linear infinite;
+  -webkit-animation: hue 5s linear infinite;
+  box-shadow: 0px 0px 50px yellow;
+  color:white;
+  background:rgba(255,255,0,0.4);
+ }
+ .hue:hover{
+  color:yellow;
+  background:transparent;
+ }
+ @keyframes hue{
+ 0%{
+ filter:hue-rotate(0deg);
+ -webkit-filter:hue-rotate(0deg);
+ }
+ 10%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 20%{
+ box-shadow: 1px 1px 50px yellow;
+ }
+ 30%{
+ box-shadow: 1px 0px 50px yellow;
+ }
+ 40%{
+  box-shadow: 1px -1px 50px yellow;
+ }
+ 50%{
+ box-shadow: 0px -1px 50px yellow;
+ }
+ 60%{
+ box-shadow: -1px -1px 50px yellow;
+ }
+ 70%{
+ box-shadow: -1px 0px 50px yellow;
+ }
+ 80%{
+ box-shadow: -1px 1px 50px yellow;
+ }
+ 90%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 100%{
+ filter:hue-rotate(360deg);
+ -webkit-filter:hue-rotate(360deg);
+ }
+ }
+  .content {
+  width:80%;
+  margin-left:7.5%;
+  background:rgba(0,0,0,0.5);
+  color:white;
+  margin-top:0%;
+  font-size:25px;
+  text-align:center;
+  border-radius:30px;
+  padding:20px;
+  line-height:20px;
+ }
+ .title {
+  font-size:40px;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-weight:bolder;
+  margin-bottom:10px;
+ }
+</style>
+<script>
+
+  window.applicationCache.ondownloading=function(){document.getElementById("msgs").innerHTML="Caching Started!!"};
+  window.applicationCache.onprogress=function(a){document.getElementById("msgs").innerHTML="Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed"};
+  window.applicationCache.oncached=function(){document.getElementById("msgs").innerHTML="Cached Successfully!!";setTimeout(function(){document.getElementById("msgs").innerHTML="Turn off internet"; }, 1500);};
+</script>
+
+<div style="background-color:#1A1920;background:url("img.jpg");background-size:cover;background-repeat:no-repeat;">
+<h1 style='font-size:30px;text-shadow: 4px 4px 4px black;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;'>Magnum Host Manual GoldHen 5.05 FW</h1>
+<div> <iframe src="blank.html" name="exp-loader" width="100%" height="140" style="border:none;"> </iframe> </div>
+</head>
+<body style='background-color:#1A1920;background:url("img.jpg");background-size:cover;background-repeat:no-repeat;'>
+<script src="cal.js"></script>
+<div id=all style="text-align:center">
+<button style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' class="pointer" onMouseOver="msgs.innerHTML='GoldHen v2.2.2 by Sistro'"; onmouseout="msgs.innerHTML='Magnum Host 5.05 fw'" onclick="load_goldhen22(); return false"><b> GoldHen v2.2.2 </button>
+<br><br>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="msgs.innerHTML='Magnum Host 5.05 fw'" onclick="load_copych(); return false"> Cheat Copy </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='binloader port 9020'"; onmouseout="msgs.innerHTML='Magnum Host 5.05 fw'" onclick="load_binloader(); return false"> Bin Loader </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='Disable Update'"; onmouseout="msgs.innerHTML='Magnum Host 5.05 fw'" onclick="load_updatesdisable(); return false"> Disable Updates </button>
+<br><br>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='Enable Update'"; onmouseout="msgs.innerHTML='Magnum Host 5.05 fw'" onclick="load_updatesenable(); return false"> Enable Updates </button>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='To-DEX'"; onmouseout="msgs.innerHTML='Magnum Host 5.05 fw'" onclick="load_todex(); return false"> ToDex </button>
+<button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='Orbis Toolbox Loader Alfa 1190'"; onmouseout="msgs.innerHTML='Magnum Host 5.05 fw'" onclick="load_orbis(); return false"> Orbis Toolbox </button>
+</div>
+
+<script>
+function load_react(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'react1.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_deact(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'deact1.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_reactM(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'reactM.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_copych(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'copych.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+
+function load_hen16(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'vtxhen16.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_goldhen(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_goldhen1(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen1.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_goldhen2b(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen2.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_goldhen2b2(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen2b2.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_goldhen212(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen212.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_goldhen22(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen22.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_hen17(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'vtxhen17.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_hen18(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'vtxhen18.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_hen212(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'hen212.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_hen213(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'hen213.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_hen214(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'hen214.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_hen214b(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'hen214b.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+
+function load_mirahen(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'mirahen18.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+
+function load_binloader(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'binloader.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+
+function load_ftp(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'vtxftp.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_ftprw(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'ftprw.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_dumper(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'vtxdump.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_app2usb(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'apptousb.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_updatesdisable(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'blocker.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_updatesenable(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'unblock.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_dbBackup(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'db_backup.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_kdumper(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'kdamper.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_dbRestore(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'db_restore.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+
+function load_todex(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'todex.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_ps4debug(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'ps4debug100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+
+function load_webrte(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'rte.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_linuxbaikal(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'baikal.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_linux1g(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = '1gblinux.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_linux2g(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = '2gblinux.html';
+        link.target = 'exp-loader';
+        link.click();
+}
+function load_linux3g(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = '3gblinux.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+
+function load_fanthresh(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'FanControl.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_rif(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'RifRenamer.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtav(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gta_v_lotus104.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtav2(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gta_v_ap_ii_intense.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtava100(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtava100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtava127(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtava127.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtava132(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtava132.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtava133(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtava133.html';
+        link.target = 'exp-loader';
+        link.click();
+		}		
+function load_gtavi100(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavi100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavi127(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavi127.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavl100(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavl100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavl127(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavl127.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavna100(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavna100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavna127(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavna127.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavnyd127(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavnyd127.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavp100(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavp100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavwm100(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavwm100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavwm127(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtavwm127.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavwm132(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Wilde32.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavwm133(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Wilde33.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_gtavwm138(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'Wilde38.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_ren(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'PS4REN.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_infinix(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'infinix.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_trpb(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'trp_backup.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_trpr(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'trp_restore.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_saveb(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'save_backup.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_saver(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'save_restore.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_savem(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'save_mounter.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_orbis(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'orbis.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_rdr100(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'RDR2v100.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_rdr113(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'RDR2v113.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_rdr119(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'RDR2v119.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_rdr124(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'RDR2v124.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_rdr129(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'RDR2v129.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function load_rdr129H(){
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'RDR2v129H.html';
+        link.target = 'exp-loader';
+        link.click();
+		}
+function allhens(){
+all.style.display = "none";
+hens.style.display = "block";
+		}
+function allrestore(){
+all.style.display = "none";
+restore.style.display = "block";
+		}
+function alltools(){
+all.style.display = "none"
+tools.style.display = "block";
+		}
+function alltrainer(){
+all.style.display = "none";
+trainer.style.display = "block";
+		}
+function alldump(){
+all.style.display = "none";
+dump.style.display = "block";
+		}
+function alllinux(){
+all.style.display = "none";
+linux.style.display = "block";
+		}
+function allmods(){
+all.style.display = "none";
+gtav.style.display = "block";
+		}
+function backall(){
+all.style.display = "block";
+hens.style.display = "none";
+restore.style.display = "none";
+tools.style.display = "none";
+trainer.style.display = "none";
+dump.style.display = "none";
+linux.style.display = "none";
+gtav.style.display = "none";
+		}
+</script>
+</div>
+</body>
+</html>
