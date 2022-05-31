@@ -870,7 +870,7 @@ function payload_finished(payload)
 function done(){
 	        document.getElementById("progressx").remove();
             document.getElementById('load').innerHTML='<tr id="progress" class="titlehead">'+
-			'<td align="center" id="jailbreak" colspan="5" >Karo Host for PS4 7.02 FW'+
+			'<td align="center" id="jailbreak" colspan="5" >Magnum Host Lite 7.02 FW'+
 			'</td>'+
 			'</tr>'+
 			'<tr id="mexp">'+
