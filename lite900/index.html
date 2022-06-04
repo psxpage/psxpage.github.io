@@ -1032,7 +1032,7 @@ function kernel() {
    }
   }
   chain.run(); 
-  alert("Insert USB Drive and click OK after You See The Popup Notification, after jailbreak remove usb from PS4");
+  alert("Masukkan Flashdisk/Harddisk, klik OK setelah muncul Notifikasi");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -1056,12 +1056,12 @@ function kernel() {
             chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
             chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
             chain.run();
-            alert("Jailbreak done. Remove USB Drive from PS4");
+            alert("Jailbreak selesai, cabut Flashdisk/Harddisk dari PS4");
             setTimeout(jbdone, 50);
         }
         else
         {
-            alert("failed to trigger exploit kernel heap might be corrupted, try again or reboot the console");
+            alert("Gagal memicu Exploit, coba lagi atau mulai ulang PS4 anda");
             p.write8(0, 0);
         }
  };
