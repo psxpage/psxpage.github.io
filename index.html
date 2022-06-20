@@ -4,15 +4,20 @@
 <title>Magnum Game</title>
 <style type="text/css">
 body {
-  background-color: #1A1920;
-  background:url("img.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
-  height:97%;
- }
- button {
+            background-color: #765c43;
+            background:url("bg210.png");
+            background-repeat:repeat;
+            height:97%;
+}
+#p {
+            color: #ff00ff;
+            font-weight: bold;
+            font-family:Rockwell, Calibri, Monospace;
+            font-style : oblique;
+}
+button {
             background:rgba(0,0,0,0.5);
-		    box-shadow: 0 0px 10px 0 white;
+		    box-shadow: 0 0px 10px 0 black;
             border: 2px solid black;
             border-radius: 10px;
             width: 170px;
@@ -22,134 +27,23 @@ body {
             margin: 6px;
 }
 button:hover {
-            box-shadow: 0 5px 50px 0 white;
-            background-color: purple;
+            box-shadow: 0 0px 10px 0 white;
+            background-color: #765c43;
             color: white;
             border-radius: 10px;
 }
- .content {
-  width:80%;
-  height:15%;
-  margin-left:7.5%;
-  background:rgba(0,0,0,0.5);
-  color:white;
-  margin-top:30%;
-  font-size:25px;
-  text-align:center;
-  border-radius:30px;
-  padding:20px;
-  line-height:12px;
-  position:absolute;bottom:0px;
- }
- .title {
-  font-size:40px;
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-weight:bolder;
-  margin-bottom:10px;
- }
- .yellow {
-  color:yellow;
- }
- .hue {
-  color:yellow;
-  padding:10px;
-  border-radius:10px;
-  animation:hue 5s linear infinite;
-  -webkit-animation: hue 5s linear infinite;
-  box-shadow: 0px 0px 50px yellow;
-  color:white;
-  background:rgba(255,255,0,0.4);
- }
- .hue:hover{
-  color:yellow;
-  background:transparent;
- }
- @keyframes hue{
- 0%{
- filter:hue-rotate(0deg);
- -webkit-filter:hue-rotate(0deg);
- }
- 10%{
- box-shadow: 0px 1px 50px yellow;
- }
- 20%{
- box-shadow: 1px 1px 50px yellow;
- }
- 30%{
- box-shadow: 1px 0px 50px yellow;
- }
- 40%{
-  box-shadow: 1px -1px 50px yellow;
- }
- 50%{
- box-shadow: 0px -1px 50px yellow;
- }
- 60%{
- box-shadow: -1px -1px 50px yellow;
- }
- 70%{
- box-shadow: -1px 0px 50px yellow;
- }
- 80%{
- box-shadow: -1px 1px 50px yellow;
- }
- 90%{
- box-shadow: 0px 1px 50px yellow;
- }
- 100%{
- filter:hue-rotate(360deg);
- -webkit-filter:hue-rotate(360deg);
- }
- }
- .text {
-  padding-bottom:50px;
- }
-  .back {
-   font-size:25px;
-   margin-top:10px;
-   display:block;
-   line-height:55px;
-   width:20%;
-   text-decoration:none;
-   height:50px;
-   background:white;
-   color:black;
-   border-radius:15px;
-  }
-  .back:hover{
-   border:2px solid white;
-   background:transparent;
-   box-sizing:border-box;
-   color:white;
-  }
-  .pointer {cursor: pointer;}
+.pointer {
+            cursor: pointer;
+}
 </style>
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getManualYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
 </head>
 <body class="bg-darker">
 <div id="container"  style="">
-<h1 style='font-size:30px;text-align:center;color:yellow;'>Magnum Host Menu For Playstation</h1>
-<h1 id=msgs2 style='font-size:25px;text-align:center;color:white;'>Status</h1>
+<h1 id=p style='font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Magnum Host For Playstation Jailbreak</h1>
+<h1 id=msgs2 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Status</h1>
 <div style="text-align:center"  id="MyItems">
-<a href="pkg/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Homebrew for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Homebrew</B></button></a>
-<a href="firmware/index.html"><button style='font-size:22px;text-align:center;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Firmware for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Firmware</B></button></a><br>
+<a href="pkg/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Homebrew for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Homebrew</B></button></a>
+<a href="firmware/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Firmware for Playstation'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Firmware</B></button></a><br>
 <a href="lite505/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Lite Host GoldHen v2.2.2 For 5.05'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Lite 5.05</B></button></a>
 <a href="505/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Full Host GoldHen v2.2.2 For 5.05'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Full 5.05</B></button></a>
 <a href="auto505/index.html"><button style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs2.innerHTML='Auto Host GoldHen v2.2.2 For 5.05'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto 5.05</B></button></a><br>
