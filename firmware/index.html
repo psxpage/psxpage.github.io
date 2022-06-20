@@ -4,123 +4,33 @@
 <title>Firmware for Playstation</title>
 <style type="text/css">
 body {
-  background-color: #1A1920;
-  background:url("img.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
-  height:97%;
+    background-color: #765c43;
+    background:url("bg210.png");
+    background-repeat:repeat;
+    height:97%;
  }
+#p {
+    color: #ffffff;
+    font-weight: bold;
+    font-family:Rockwell, Calibri, Monospace;
+    font-style : oblique;
+}
  button {
             background:rgba(0,0,0,0.5);
-	    box-shadow: 0 0px 10px 0 white;
+            box-shadow: 0 0px 10px 0 black;
             border: 2px solid black;
             border-radius: 10px;
-            width: 175px;
+            width: 190px;
             height: 43px;            
             text-align: center;
             padding: 6px;
             margin: 0px;
 }
 button:hover {
-            box-shadow: 0 5px 50px 0 white;
-            background-color: purple;
+            box-shadow: 0 0px 10px 0 white;
+            background-color:#765c43;
             color: white;
             border-radius: 10px;
-}
- .content {
-  width:80%;
-  margin-left:7.5%;
-  background:rgba(0,0,0,0.5);
-  color:white;
-  margin-top:1%;
-  font-size:25px;
-  text-align:center;
-  border-radius:30px;
-  padding:20px;
-  line-height:40px;
- }
- .title {
-  font-size:40px;
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-weight:bolder;
-  margin-bottom:10px;
- }
- .yellow {
-  color:yellow;
- }
- .hue {
-  color:yellow;
-  padding:10px;
-  border-radius:10px;
-  animation:hue 5s linear infinite;
-  -webkit-animation: hue 5s linear infinite;
-  box-shadow: 0px 0px 50px yellow;
-  color:white;
-  background:rgba(255,255,0,0.4);
- }
- .hue:hover{
-  color:yellow;
-  background:transparent;
- }
- @keyframes hue{
- 0%{
- filter:hue-rotate(0deg);
- -webkit-filter:hue-rotate(0deg);
- }
- 10%{
- box-shadow: 0px 1px 50px yellow;
- }
- 20%{
- box-shadow: 1px 1px 50px yellow;
- }
- 30%{
- box-shadow: 1px 0px 50px yellow;
- }
- 40%{
-  box-shadow: 1px -1px 50px yellow;
- }
- 50%{
- box-shadow: 0px -1px 50px yellow;
- }
- 60%{
- box-shadow: -1px -1px 50px yellow;
- }
- 70%{
- box-shadow: -1px 0px 50px yellow;
- }
- 80%{
- box-shadow: -1px 1px 50px yellow;
- }
- 90%{
- box-shadow: 0px 1px 50px yellow;
- }
- 100%{
- filter:hue-rotate(360deg);
- -webkit-filter:hue-rotate(360deg);
- }
- }
- .text {
-  padding-bottom:50px;
- }
-  .back {
-   font-size:25px;
-   margin-top:10px;
-   display:block;
-   line-height:55px;
-   width:20%;
-   text-decoration:none;
-   height:50px;
-   background:white;
-   color:black;
-   border-radius:15px;
-  }
-  .back:hover{
-   border:2px solid white;
-   background:transparent;
-   box-sizing:border-box;
-   color:white;
   }
   .pointer {cursor: pointer;}
 </style>
@@ -143,9 +53,8 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 </head>
 <body class="bg-darker">
 <div id="container"  style="">
-<br>
 <div style="text-align:center"  id="MyItems">
-<h1 style='font-size:20px;text-align:center;color:yellow;text-shadow: 4px 4px 4px black;'>PS3 Firmware</h1>
+<h1 id=p style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;'>PS3 Firmware</h1>
 <a href="https://bit.ly/3lVUmk8"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.87 OFW</B></button></a>
 <a href="https://bit.ly/3xwXjNP"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.87 HFW</B></button></a>
 <a href="https://bit.ly/3KJt2zb"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.87 CFW</B></button></a>
@@ -158,7 +67,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <a href="https://bit.ly/3PhftcH"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.89 HFW</B></button></a>
 <a href="https://bit.ly/3PvICRy"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>4.89 CFW</B></button></a>
 <br><br>
-  <h1 style='font-size:20px;text-align:center;color:yellow;text-shadow: 4px 4px 4px black;'>PS4 Firmware</h1>
+  <h1 id=p style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;'>PS4 Firmware</h1>
 <a href="https://bit.ly/2VbLI5X"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>5.05 Official</B></button></a>
 <a href="https://bit.ly/3fhglh9"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>5.05 Recovery</B></button></a>
 <a href="https://bit.ly/3ieG5Nl"><button style='font-size:15px;text-align:center;color:white' class="pointer" type="button"><B>6.72 Official</B></button></a>
