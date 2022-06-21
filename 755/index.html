@@ -158,7 +158,7 @@ background-size:cover;
 }
 button {
             background:rgba(0,0,0,0.5);
-			box-shadow: 0 0px 10px 0 white;
+			box-shadow: 0 0px 10px 0 black;
             border: 2px solid black;
             border-radius: 10px;
             width: 180px;
@@ -166,10 +166,10 @@ button {
             text-align: center;
 }
 button:hover {
-            box-shadow: 0 5px 50px 0 white;
+            box-shadow: 0 0px 10px 0 white;
             color: white;
             border-radius: 10px;
-			background-color: purple;
+			background-color: #765c43;
 }
 
 hr {
@@ -200,11 +200,11 @@ opacity:0.7;
   window.applicationCache.oncached=function(){document.getElementById("msgs2").innerHTML="Cached Successfully!!";setTimeout(function(){document.getElementById("msgs2").innerHTML="Turn off internet"; }, 1500);};
 </script>
 </head>
-<body onload="go()" style='background-color:#1A1920;background:url("img.jpg");background-size:cover;background-repeat:no-repeat;'>
-<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;'>Magnum Host Full 7.55 FW</h1>
-<h1 id=msgs2 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Status</h1>
+<body onload="go()" style='background-color:#1A1920;background:url("bg.png");background-repeat:repeat;'>
+<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Magnum Host Full 7.55 FW</h1>
+<h1 id=msgs2 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:#e7c2b0;'>Status</h1>
 <div style="text-align:center">
-<a href="goldhen22.html"><button style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;width: 220px;height: 60px;color:white' class="pointer" onMouseOver="msgs2.innerHTML='GoldHen v2.2.2 by SISTR0 for PS4 7.5X Fw'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>GoldHen v2.2.2</B></button></a>
+<a href="goldhen22.html"><button style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;width: 220px;height: 60px;color:white' class="pointer" onMouseOver="msgs2.innerHTML='GoldHen v2.2.2 by SISTR0 for PS4 7.5X Fw'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>GoldHen v2.2.2</B></button></a>
 <a style='font-size:22px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="button" id="button-Payload" onMouseOver="msgs2.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="msgs2.innerHTML='Status'" type="button" onclick="load_copych()"><button href="" style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;width: 220px;height: 60px;color:white' ><B>Cheat Copy</B></button></a></div>
 <div style="text-align:center"  id="MyItems"><br><br>
 <a style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="button" id="button-Payload" onMouseOver="msgs2.innerHTML='A full access FTP server for the PS4'"; onmouseout="msgs2.innerHTML='Status'" type="button" onclick="load_FTP()"><button href="" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > FTP </button></a>
