@@ -17,14 +17,14 @@ background-size:cover;
             padding: 1px;
             margin: 1px;
             color: white;
-            box-shadow: 0 0px 10px 0 white;
+            box-shadow: 0 0px 10px 0 black;
             background:rgba(0,0,0,0.5);
 }
 button:hover {
-            box-shadow: 0 5px 50px 0 white;
+            box-shadow: 0 0px 10px 0 white;
             color: white;
             border-radius: 10px;
-            background-color: purple;
+            background-color: #765c43;
 }
 header{
 	height: 3em;
