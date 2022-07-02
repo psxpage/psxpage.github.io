@@ -1,7 +1,6 @@
 CACHE MANIFEST 
 
 CACHE: 
-bg210.png
 app-dumper.bin.bz2
 app2usb.bin.bz2
 backupdb.bin.bz2
@@ -29,6 +28,7 @@ fan80.bin.bz2
 frontend.js
 ftp.bin.bz2
 goldhen2b2.bin
+goldhen_2.3.b2_900.bin
 goldhen_2.2.2_900.bin
 goldhen_212_900.bin
 gtava0.bin.bz2
