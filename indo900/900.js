@@ -696,7 +696,7 @@ function kernelExploit() {
    }
   }
   chain.run(); 
-  alert("\n\n------------------------------Masukkan Flashdisk Sekarang.------------------------------\n-----------Klik OK setelah muncul notifikasi 'USB unsupported/USB tidak didukung'.-----------");
+  alert("\n\n---------------------------Masukkan Flashdisk Sekarang---------------------------\n--------Klik OK setelah muncul notifikasi 'USB unsupported/USB tidak didukung'--------");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -711,7 +711,7 @@ function kernelExploit() {
    chain.run();
    return;
   }
-  alert("Kernel Exploit Failed! Reboot and Try Again.");
+  alert("Kernel Exploit Gagal! Reboot dan Coba lagi.");
   p.write8(0, 0);
   return;
  };
