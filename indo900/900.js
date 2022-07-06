@@ -696,7 +696,7 @@ function kernelExploit() {
    }
   }
   chain.run(); 
-  alert("\n\n---------------------------------Masukkan Flashdisk Sekarang---------------------------------\n--------Klik OK setelah muncul notifikasi 'USB unsupported/USB tidak didukung'--------");
+  alert("Masukkan Flashdisk, klik OK setelah muncul Notifikasi 'USB unsupported/USB tidak didukung'");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
