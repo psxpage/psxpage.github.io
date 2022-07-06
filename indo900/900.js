@@ -43,7 +43,7 @@ function allset(){
 }
 
 function awaitpl() {
- msgs.innerHTML="GoldHEN Already Loaded & BinLoader Ready,<br>Send A Payload To Port 9020 Now";
+ msgs.innerHTML="GoldHEN & BinLoader Sudah Siap,<br>Kirim Payload Ke Port 9020 Sekarang";
 }
 
 function run_hax() {
@@ -51,7 +51,7 @@ function run_hax() {
  if (chain.syscall(23, 0).low != 0x0) {
   localStorage.HenLoaded="no";
   kernelExploit();
-  alert("\n\nNow remove the USB drive then click OK to continue");
+  alert("\n\nSekarang lepaskan Flashdisk lalu klik OK untuk melanjutkan");
  }
  if(localStorage.HenLoaded=="yes" && sessionStorage.HenLoaded!="yes"){setTimeout(runBinLoader,500);}
  else if(localStorage.HenLoaded=="yes" && sessionStorage.HenLoaded=="yes"){allset();}
@@ -696,7 +696,7 @@ function kernelExploit() {
    }
   }
   chain.run(); 
-  alert("\n\n------------------------------Insert the USB drive now.------------------------------\n-----------Click OK after you see the 'USB unsupported' notification.-----------");
+  alert("\n\n------------------------------Masukkan Flashdisk Sekarang.------------------------------\n-----------Klik OK setelah muncul notifikasi 'USB unsupported/USB tidak didukung'.-----------");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
