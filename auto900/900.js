@@ -51,7 +51,7 @@ function run_hax() {
  if (chain.syscall(23, 0).low != 0x0) {
   localStorage.HenLoaded="no";
   kernelExploit();
-  alert("\n\nSekarang lepaskan Flashdisk lalu klik OK untuk melanjutkan");
+  alert("Cabut Flashdisk lalu klik OK untuk melanjutkan");
  }
  if(localStorage.HenLoaded=="yes" && sessionStorage.HenLoaded!="yes"){setTimeout(runBinLoader,500);}
  else if(localStorage.HenLoaded=="yes" && sessionStorage.HenLoaded=="yes"){allset();}
